@@ -1,0 +1,170 @@
+"use client"
+
+import { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { ChevronDown, Menu, X } from "lucide-react"
+
+const industries = [
+  { name: "Fintech", description: "Content and SEO for fintech companies", href: "/industries/fintech" },
+  { name: "iGaming & Online Gambling", description: "Authority content for regulated gaming", href: "/industries/igaming" },
+  { name: "Trading & Brokers", description: "SEO for forex and trading platforms", href: "/industries/trading-brokers" },
+  { name: "Payment Gateways", description: "Content for payment processors", href: "/industries/payment-gateways" },
+  { name: "Crypto & Web3", description: "Web3 content marketing agency", href: "/industries/crypto-web3" },
+  { name: "Investment & Wealth", description: "SEO for investment firms", href: "/industries/investment-wealth" },
+  { name: "Neobanks & Digital Banking", description: "Content for digital-first banks", href: "/industries/neobanks" },
+  { name: "InsurTech", description: "Insurance content marketing", href: "/industries/insurtech" },
+  { name: "Finance Consultants", description: "SEO for financial advisors", href: "/industries/finance-consultants" },
+]
+
+const services = [
+  { name: "SEO Strategy & Content", description: "Full content system architecture", href: "/services/seo-strategy" },
+  { name: "Thought Leadership", description: "Bylined articles and editorial", href: "/services/thought-leadership" },
+  { name: "Authority Link Building", description: "Finance-grade backlinks", href: "/services/link-building" },
+  { name: "PR & Publication Placement", description: "Finextra, Forbes, The Block", href: "/services/pr-placement" },
+  { name: "Podcast Booking", description: "Fintech and finance shows", href: "/services/podcast-booking" },
+  { name: "LinkedIn Content", description: "Strategy for finance audiences", href: "/services/linkedin-content" },
+  { name: "YouTube & Video", description: "Scripted video for search", href: "/services/video-content" },
+  { name: "E-E-A-T Optimization", description: "YMYL compliance and trust signals", href: "/services/eeat-optimization" },
+]
+
+function DesktopDropdown({
+  label,
+  items,
+}: {
+  label: string
+  items: Array<{ name: string; description: string; href: string }>
+}) {
+  return (
+    <div className="group relative">
+      <button className="flex items-center gap-1 text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-all hover:text-green-800 px-4 py-2">
+        {label}
+        <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
+      </button>
+
+      <div className="pointer-events-none absolute left-0 top-full pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+        <div className="grid w-[340px] gap-1 rounded-2xl border border-green-900/18 bg-white/95 p-2 shadow-xl backdrop-blur-xl">
+          {items.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="rounded-xl px-4 py-2.5 transition-colors hover:bg-[#f5f0e8]"
+            >
+              <span className="block text-sm font-semibold text-green-900">{item.name}</span>
+              <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">{item.description}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f0e8]/93 backdrop-blur-md border-b border-green-900/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-[68px]">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2.5 no-underline">
+            <Image src="/favicon.png" alt="Revflow" width={32} height={32} className="rounded-lg" />
+            <span className="font-bold text-sm tracking-[.06em] text-green-800">
+              REV<span className="text-green-600">FLOW</span>
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-0">
+            <DesktopDropdown label="Industries" items={industries} />
+            <DesktopDropdown label="Services" items={services} />
+            <Link href="#pricing" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+              Pricing
+            </Link>
+            <Link href="#contact" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+              Contact
+            </Link>
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center gap-4">
+            <Link href="#contact" className="bg-green-800 text-white text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity no-underline">
+              Book a Call
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 text-green-900"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-green-900/10">
+            <nav className="flex flex-col gap-4">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Industries</p>
+                <div className="grid gap-2">
+                  {industries.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="rounded-xl border border-green-900/10 px-4 py-3 transition-colors hover:bg-[#f5f0e8]/60 no-underline"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="block text-sm font-semibold text-green-900">{item.name}</span>
+                      <span className="mt-1 block text-xs leading-relaxed text-muted-foreground">{item.description}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Services</p>
+                <div className="grid gap-2">
+                  {services.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="rounded-xl border border-green-900/10 px-4 py-3 transition-colors hover:bg-[#f5f0e8]/60 no-underline"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="block text-sm font-semibold text-green-900">{item.name}</span>
+                      <span className="mt-1 block text-xs leading-relaxed text-muted-foreground">{item.description}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <Link
+                href="#pricing"
+                className="text-muted-foreground hover:text-green-800 transition-colors no-underline"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link
+                href="#contact"
+                className="text-muted-foreground hover:text-green-800 transition-colors no-underline"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Link 
+                href="#contact"
+                className="bg-green-800 text-white text-center text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity w-full mt-2 no-underline"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Book a Call
+              </Link>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  )
+}
