@@ -43,7 +43,7 @@ export function ProcessSection() {
   ]
 
   return (
-    <section className="py-28 bg-[#ede8de]">
+    <section id="process" className="py-28 bg-[#ede8de]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">

@@ -30,9 +30,9 @@ export function Hero() {
               <Link href="#contact" className="bg-green-800 text-white hover:bg-green-700 px-8 py-4 rounded-md text-sm font-bold uppercase tracking-widest shadow-lg shadow-green-800/20 no-underline">
                 Get Your Free Authority Audit
               </Link>
-              <button className="border border-green-800/30 text-green-800 hover:bg-green-50 bg-transparent px-8 py-4 rounded-md text-sm font-semibold uppercase tracking-wide">
+              <Link href="#process" className="border border-green-800/30 text-green-800 hover:bg-green-50 bg-transparent px-8 py-4 rounded-md text-sm font-semibold uppercase tracking-wide no-underline inline-flex items-center">
                 See Our Process
-              </button>
+              </Link>
             </div>
           </div>
 
