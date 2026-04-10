@@ -20,14 +20,14 @@ export function PubBar() {
           {publications.map((pub) => (
             <div
               key={pub.name}
-              className="hover:opacity-80 transition-opacity cursor-default grayscale opacity-35"
+              className="hover:opacity-80 transition-opacity cursor-default grayscale opacity-35 flex items-center justify-center h-8"
             >
               <Image
                 src={pub.src}
                 alt={pub.name}
                 width={pub.w}
                 height={pub.h}
-                className="object-contain"
+                className="object-contain h-full w-auto"
               />
             </div>
           ))}
