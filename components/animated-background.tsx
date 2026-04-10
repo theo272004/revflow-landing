@@ -15,7 +15,7 @@ export function AnimatedBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const mouseRef = useRef({ x: 0, y: 0 })
   const particlesRef = useRef<Particle[]>([])
-  const animFrameRef = useRef<number>()
+  const animFrameRef = useRef<number>(undefined)
 
   useEffect(() => {
     const canvas = canvasRef.current
