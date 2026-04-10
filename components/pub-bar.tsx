@@ -3,9 +3,9 @@ import Image from "next/image"
 export function PubBar() {
   const publications = [
     { name: "Finextra", src: "/revflow-landing/finextra-logo.png", w: 110, h: 28 },
-    { name: "The Block", src: "/revflow-landing/theblock_icon.png", w: 90, h: 28 },
+    { name: "The Block", src: "/revflow-landing/theblock_icon.png", w: 100, h: 28 },
     { name: "Forbes Finance", src: "/revflow-landing/Forbes-Logo.png", w: 100, h: 28 },
-    { name: "Crowdfund Insider", src: "/revflow-landing/growdfundinsider_logo.png", w: 130, h: 28 },
+    { name: "Crowdfund Insider", src: "/revflow-landing/growdfundinsider_logo.png", w: 140, h: 28 },
     { name: "Payments Source", src: "/revflow-landing/paymentsourcelogo.png", w: 120, h: 28 },
     { name: "Coindesk", src: "/revflow-landing/CoinDesk_logo.svg.png", w: 100, h: 28 },
   ]
@@ -20,7 +20,7 @@ export function PubBar() {
           {publications.map((pub) => (
             <div
               key={pub.name}
-              className="relative hover:opacity-80 transition-opacity cursor-default"
+              className="relative hover:opacity-80 transition-opacity cursor-default grayscale opacity-35"
               style={{ width: pub.w, height: pub.h }}
             >
               <Image
@@ -28,7 +28,6 @@ export function PubBar() {
                 alt={pub.name}
                 fill
                 className="object-contain"
-                style={{ filter: "grayscale(100%) opacity(0.35)" }}
               />
             </div>
           ))}
