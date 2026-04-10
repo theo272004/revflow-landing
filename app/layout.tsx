@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   title: 'Revflow | Authority Content for Financial Services',
   description: 'We build content systems and editorial authority for fintech, iGaming, trading, payments, and investment companies. E-E-A-T compliant.',
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/revflow-landing/favicon.png',
+    apple: '/revflow-landing/favicon.png',
   },
 }
 
