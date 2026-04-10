@@ -54,7 +54,7 @@ export function TestimonialsSection() {
               key={initials}
               className={`rounded-2xl p-8 transition-all hover:border-green-900/20 hover:-translate-y-1 relative z-10 ${
                 featured
-                  ? "border border-green-900/26 bg-green-100"
+                  ? "bg-white border border-green-900/10"
                   : "bg-white border border-green-900/10"
               }`}
             >

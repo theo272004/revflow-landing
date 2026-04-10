@@ -9,7 +9,7 @@ export function PricingSection() {
   ]
 
   return (
-    <section className="py-28 bg-white">
+    <section id="pricing" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
