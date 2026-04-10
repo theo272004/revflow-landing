@@ -4,7 +4,6 @@ import { PubBar } from "@/components/pub-bar"
 import { ProblemSection } from "@/components/problem-section"
 import { SystemSection } from "@/components/system-section"
 import { IndustriesSection } from "@/components/industries-section"
-import { CaseStudiesSection } from "@/components/case-studies-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { PricingSection } from "@/components/pricing-section"
 import { CTASection } from "@/components/cta-section"
@@ -23,8 +22,6 @@ export default function Home() {
       <SystemSection />
       <div className="border-t border-green-900/10" />
       <IndustriesSection />
-      <div className="border-t border-green-900/10" />
-      <CaseStudiesSection />
       <div className="border-t border-green-900/10" />
       <TestimonialsSection />
       <div className="border-t border-green-900/10" />
