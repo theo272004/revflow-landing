@@ -84,6 +84,9 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-0">
             <DesktopDropdown label="Industries" items={industries} />
             <DesktopDropdown label="Services" items={services} />
+            <Link href="/industries/ourprocess" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+              Our Process
+            </Link>
             <Link href="#pricing" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
               Pricing
             </Link>
@@ -159,6 +162,13 @@ export function Header() {
                 </div>
               )}
 
+              <Link
+                href="/industries/ourprocess"
+                className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Process
+              </Link>
               <Link
                 href="#pricing"
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
