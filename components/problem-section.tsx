@@ -1,58 +1,69 @@
-import { Shield, AlertTriangle, BarChart3 } from "lucide-react"
+import { Search, Users, Monitor, Tv, Shield, MessageSquare } from "lucide-react"
 
 export function ProblemSection() {
   const problems = [
     {
+      icon: Search,
+      title: "Your competitors rank for every term your clients search",
+      desc: "You know your product is better. Your clients tell you so after they sign. But before they sign, they find someone else first.",
+    },
+    {
+      icon: Users,
+      title: "You've hired agencies that didn't understand your space",
+      desc: "They wrote generic content, got you irrelevant traffic, and had no idea what compliance meant. You ended up fixing their work or starting over.",
+    },
+    {
+      icon: Monitor,
+      title: "You're invisible where the decision actually happens",
+      desc: "Before a prospect takes your call, they've already Googled you, checked if you've been mentioned anywhere credible, and formed an opinion. Most companies lose the deal there.",
+    },
+    {
+      icon: Tv,
+      title: "You're paying for ads that stop working the moment you stop paying",
+      desc: "Paid traffic is rented. The day you pause the campaign, the pipeline dries up. You need something that builds, not something that disappears.",
+    },
+    {
+      icon: MessageSquare,
+      title: "ChatGPT recommends your competitors, not you",
+      desc: "When a CFO asks an AI model which payment processors to consider, your name doesn't come up. That's a new kind of invisible, and most companies haven't solved it yet.",
+    },
+    {
       icon: Shield,
-      title: "YMYL and E-E-A-T Standards",
-      desc: "Your Money Your Life categories require demonstrated expertise, authoritativeness and trust at every layer — not just good writing.",
-    },
-    {
-      icon: AlertTriangle,
-      title: "Compliance Blindness",
-      desc: "Content that makes performance claims or misrepresents regulated products creates real legal and reputational exposure. Most agencies don't know where the line is.",
-    },
-    {
-      icon: BarChart3,
-      title: "Wrong Channels",
-      desc: "Your buyers are on LinkedIn, Finextra, and industry podcasts. Agencies that default to generic content platforms are fishing in the wrong waters.",
+      title: "Finance content has rules most agencies don't know about",
+      desc: "Google treats financial content differently. One compliance mistake in your copy can cost you more than just rankings. Most agencies have never worked in a regulated market.",
     },
   ]
 
   return (
-    <section className="py-20">
+    <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          {/* Left */}
-          <div>
-            <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
-              ● Why This Vertical Is Different
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
-              Finance is the hardest vertical to rank in — and most agencies aren&apos;t built for it.
-            </h2>
-            <p className="text-base text-muted-foreground leading-relaxed mt-4">
-              Google holds financial content to the highest editorial standards on the internet. Generic SEO won&apos;t survive here. Neither will content written by people who don&apos;t understand the space.
-            </p>
-          </div>
+        <div className="text-center max-w-[700px] mx-auto mb-16">
+          <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
+            ● Sound familiar?
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
+            You have a great product.<br className="hidden sm:block" />Nobody can find it.
+          </h2>
+          <p className="text-[17px] text-muted-foreground leading-relaxed">
+            You&apos;re not losing because your product is worse. You&apos;re losing because the established players in your space have spent years building the kind of online authority you haven&apos;t had time to build yet. That&apos;s fixable.
+          </p>
+        </div>
 
-          {/* Right */}
-          <div className="flex flex-col gap-4">
-            {problems.map(({ icon: Icon, title, desc }) => (
-              <div
-                key={title}
-                className="bg-white relative z-10 border border-green-900/10 rounded-2xl p-6 flex gap-5 items-start transition-colors hover:border-red-900/20"
-              >
-                <div className="w-10 h-10 rounded-xl bg-red-900/7 flex items-center justify-center flex-shrink-0">
-                  <Icon className="w-5 h-5 text-red-800" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-green-900 mb-1">{title}</h4>
-                  <p className="text-[13px] text-muted-foreground leading-relaxed">{desc}</p>
-                </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[14px]">
+          {problems.map(({ icon: Icon, title, desc }) => (
+            <div
+              key={title}
+              className="bg-[#f5f0e8] relative z-10 border border-green-900/10 rounded-2xl p-7 flex flex-col gap-4 transition-colors hover:border-red-900/20"
+            >
+              <div className="w-10 h-10 rounded-xl bg-red-900/7 flex items-center justify-center flex-shrink-0">
+                <Icon className="w-5 h-5 text-red-800" />
               </div>
-            ))}
-          </div>
+              <div>
+                <h4 className="text-sm font-bold text-green-900 mb-1">{title}</h4>
+                <p className="text-[13px] text-muted-foreground leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

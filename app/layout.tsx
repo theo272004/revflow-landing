@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Revflow | Authority Content for Financial Services',
-  description: 'We build content systems and editorial authority for fintech, iGaming, trading, payments, and investment companies. E-E-A-T compliant.',
+  title: 'SEO4Finance · Get Found. Get Trusted. Get Clients.',
+  description: 'We help fintech, iGaming, trading, and payments companies build the kind of online authority that turns searches into clients. Backlinks, publications, podcasts, and content that actually works in regulated markets.',
   icons: {
     icon: '/revflow-landing/favicon.png',
     apple: '/revflow-landing/favicon.png',

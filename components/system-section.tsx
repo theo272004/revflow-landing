@@ -1,34 +1,35 @@
-import { Shield, Users, Mail, TrendingUp } from "lucide-react"
+import { Link2, Mic, Search, Users } from "lucide-react"
+import Link from "next/link"
 
 export function SystemSection() {
   const cards = [
     {
-      icon: Shield,
+      icon: Link2,
       num: "01",
-      title: "E-E-A-T by Design",
-      desc: "Every piece is structured to signal expertise and trustworthiness to both readers and search engines. Expert attribution, compliance-aware language, and editorial depth built in from the brief.",
-      pills: ["Expert sourcing", "Compliance review", "Editorial depth"],
+      title: "Authority Backlinks",
+      desc: "Links from the publications your industry actually reads. Finextra, The Block, Payments Source, Forbes Finance. Not generic directories. Real editorial placements that move your domain authority and your reputation simultaneously.",
+      pills: ["Editorial placements", "Finance publications", "Domain authority"],
+    },
+    {
+      icon: Mic,
+      num: "02",
+      title: "Podcast Appearances",
+      desc: "We book your founders and executives on the fintech, payments, and investment shows your buyers actually listen to. A 30-minute interview builds more trust than 30 blog posts and the recording becomes a permanent asset.",
+      pills: ["Show research", "Outreach handled", "Interview prep"],
+    },
+    {
+      icon: Search,
+      num: "03",
+      title: "Search Visibility",
+      desc: "Compliance-aware content built to rank for the exact terms your buyers search before they make a decision. Not keyword stuffing. Genuine E-E-A-T content that Google trusts in YMYL categories. Which is exactly where you operate.",
+      pills: ["YMYL compliant", "E-E-A-T by design", "High-intent terms"],
     },
     {
       icon: Users,
-      num: "02",
-      title: "Thought Leadership That Converts",
-      desc: "Finance buyers respond to sharp, informed opinion from people who understand their world. We build content that earns attention from CFOs, CTOs, and compliance officers — not just clicks.",
-      pills: ["Bylined articles", "Industry commentary", "Data insights"],
-    },
-    {
-      icon: Mail,
-      num: "03",
-      title: "Publication Placement Network",
-      desc: "We place your content in the outlets your buyers already read: Finextra, The Block, Crowdfund Insider, Forbes Finance, and vertical-specific publications with real readership in your market.",
-      pills: ["Editorial placements", "Bylined features", "Authority backlinks"],
-    },
-    {
-      icon: TrendingUp,
       num: "04",
-      title: "Presence That Outlasts Your Budget",
-      desc: "Paid media disappears the moment you stop. Editorial coverage, ranked content, and citation authority keep generating trust signals long after the work is done — at zero marginal cost.",
-      pills: ["Long-term compounding", "Citation authority"],
+      title: "LinkedIn & Thought Leadership",
+      desc: "The CFO making the buying decision is on LinkedIn every day. We build consistent presence in that feed through sharp, informed content that positions your team as the people who actually understand this space.",
+      pills: ["Founder positioning", "Industry commentary", "Bylined articles"],
     },
   ]
 
@@ -39,13 +40,13 @@ export function SystemSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
-          ● The Solution
+          ● What We Do
         </span>
         <h2 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
-          Authority infrastructure built for your vertical.
+          We build the authority<br className="hidden sm:block" />your competitors already have.
         </h2>
         <p className="text-[17px] text-white/55 max-w-[600px] leading-relaxed mb-14">
-          We don&apos;t apply generic SEO to financial services. We build content systems that satisfy Google&apos;s toughest editorial standards while speaking the language your buyers understand.
+          Not blog posts. Not generic SEO reports. The actual signals that tell Google, your industry, and your future clients that you&apos;re a credible player in this space.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4">
@@ -80,12 +81,12 @@ export function SystemSection() {
 
         {/* CTA */}
         <div className="mt-11 p-9 rounded-2xl bg-white/5 border border-white/10 flex flex-col md:flex-row items-center gap-8">
-          <p className="text-[17px] text-white/70 max-w-[560px] leading-relaxed">
-            <strong className="text-white">The difference</strong> between financial companies that get found and those that don&apos;t isn&apos;t ad spend. It&apos;s whether they&apos;ve built genuine authority in their vertical.
+          <p className="text-[17px] text-white/70 max-w-[580px] leading-relaxed">
+            <strong className="text-white">The goal is simple:</strong> by the time your sales team reaches out, your prospect already knows your name, has seen you in a publication they respect, and trusts that you know what you&apos;re talking about.
           </p>
-          <button className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0">
-            See How It Works
-          </button>
+          <Link href="#process" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
+            See Our Process
+          </Link>
         </div>
       </div>
     </section>

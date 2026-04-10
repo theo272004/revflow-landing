@@ -2,30 +2,30 @@ export function CaseStudiesSection() {
   const cases = [
     {
       tag: "Payment Gateways",
-      title: "Building search presence for a B2B payments processor entering the Latin American market",
-      desc: "No brand recognition, a market dominated by local players, and a highly technical product. We built a content cluster around payment compliance and cross-border transactions that established them as a credible voice before their sales team made a single call.",
+      title: "A B2B payments processor entering Latin America with zero brand recognition",
+      desc: "Competing against local players with years of market presence. We built a content cluster around payment compliance and cross-border transactions that made them a credible voice before their sales team made a single call.",
       metrics: [
-        { val: "4.8×", label: "Organic traffic growth in 6 months" },
-        { val: "14", label: "First-page rankings on high-intent terms" },
-        { val: "24", label: "Content assets published per month" },
+        { val: "4.8×", label: "Organic traffic in 6 months" },
+        { val: "14", label: "First-page rankings" },
+        { val: "24", label: "Content assets per month" },
         { val: "3", label: "Authority backlinks per month" },
       ],
     },
     {
       tag: "Trading & Brokers",
-      title: "Helping a CFD broker compete for organic traffic against Tier 1 incumbents",
-      desc: "Going up against brokers with 15 years of domain authority requires a different approach than trying to outrank them directly. We focused on zero-competition long-tail clusters and thought leadership that positioned their analysts as primary sources in the space.",
+      title: "A CFD broker trying to compete against firms with 15 years of domain authority",
+      desc: "You can't outrank incumbents by targeting the same keywords. We focused on zero-competition long-tail clusters and thought leadership that positioned their analysts as credible sources in the space.",
       metrics: [
         { val: "3.2×", label: "Organic sessions increase" },
         { val: "22", label: "New first-page rankings" },
-        { val: "4", label: "Industry publication placements" },
+        { val: "4", label: "Publication placements" },
         { val: "2", label: "Podcast appearances booked" },
       ],
     },
     {
       tag: "iGaming",
-      title: "Establishing a B2B iGaming compliance platform as the reference voice in a niche category",
-      desc: "The product was strong but invisible. Decision-makers had never heard of them. We mapped the exact questions their buyers were asking, produced compliance-focused content that answered them, and distributed through the trade publications and LinkedIn channels they actually read.",
+      title: "A B2B compliance platform that nobody in the industry had heard of",
+      desc: "Strong product, zero visibility. We mapped the exact questions their buyers were asking, produced compliance-focused content that answered them, and distributed through the trade publications and LinkedIn channels those buyers read.",
       metrics: [
         { val: "5.8×", label: "Organic traffic increase" },
         { val: "17", label: "First-page rankings" },
@@ -44,11 +44,11 @@ export function CaseStudiesSection() {
               ● Results That Speak
             </span>
             <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight">
-              Work across the<br className="hidden sm:block" /> full spectrum.
+              Three industries.<br className="hidden sm:block" />Three different problems.
             </h2>
           </div>
           <p className="text-[17px] text-muted-foreground leading-relaxed">
-            Three industries, three different challenges. The common thread is building authority in spaces where trust is the primary conversion driver.
+            Every financial vertical has its own obstacles. Here&apos;s how we&apos;ve approached three of them.
           </p>
         </div>
 

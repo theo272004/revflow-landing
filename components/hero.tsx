@@ -12,18 +12,19 @@ export function Hero() {
 
           {/* Left — Text + CTAs */}
           <div className="max-w-xl">
+            <div className="inline-flex items-center gap-2 text-[11px] tracking-[.14em] uppercase text-green-700 border border-green-900/20 rounded-full px-4 py-1.5 mb-9 bg-white/70">
+              <span className="w-[6px] h-[6px] bg-green-500 rounded-full animate-pulse"></span>
+              For Financial Services Companies
+            </div>
             <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight">
-              Authority content
+              Get Found. <span className="text-green-600">Get Trusted.</span>
             </h1>
-            <p className="text-2xl lg:text-3xl text-muted-foreground italic mt-2 mb-2">
-              engineered for
-            </p>
             <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight mb-4">
-              financial services
+              Get Clients.
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8">
-              Fintech, iGaming, trading, investment, and payments companies don&apos;t just need traffic. They need to be trusted. We build the content infrastructure that makes that happen.
+              We help financial companies get found by the right people, earn the trust that converts them, and build the kind of online presence that keeps working long after it&apos;s built.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -31,7 +32,7 @@ export function Hero() {
                 Get Your Free Authority Audit
               </Link>
               <Link href="#process" className="border border-green-800/30 text-green-800 hover:bg-green-50 bg-transparent px-8 py-4 rounded-md text-sm font-semibold uppercase tracking-wide no-underline inline-flex items-center">
-                See Our Process
+                See How It Works
               </Link>
             </div>
           </div>
@@ -41,7 +42,7 @@ export function Hero() {
             <div className="relative w-full max-w-xl">
               <Image
                 src="/revflow-landing/hero-image.png"
-                alt="Revflow — Authority content for financial services"
+                alt="SEO4Finance — Get Found. Get Trusted. Get Clients."
                 width={730}
                 height={550}
                 className="w-full h-auto object-contain drop-shadow-xl"

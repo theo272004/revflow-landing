@@ -5,42 +5,42 @@ export function ChannelsSection() {
     {
       icon: Search,
       title: "Google Search",
-      desc: "YMYL-compliant topical clusters built for the high-intent terms your buyers search before a purchasing or partnership decision.",
+      desc: "Ranking for the terms your buyers search before they make a decision. The right traffic, at the right moment.",
       iconColor: "text-green-800",
       iconBg: "bg-green-900/8",
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      desc: "The primary channel for financial decision-makers. Thought leadership and consistent presence in the feed of your exact buyer profile.",
+      desc: "Where financial decision-makers spend their professional attention. Consistent, credible presence in their feed before you ever send an outreach message.",
       iconColor: "text-blue-600",
       iconBg: "bg-blue-600/8",
     },
     {
       icon: Mail,
       title: "Industry Publications",
-      desc: "Placed features in Finextra, The Block, Crowdfund Insider, Payments Source, and other outlets with genuine finance readership.",
+      desc: "Finextra, The Block, Crowdfund Insider, Payments Source. The outlets your buyers read to stay informed about their industry.",
       iconColor: "text-green-800",
       iconBg: "bg-green-900/8",
     },
     {
       icon: Mic,
-      title: "Podcast Appearances",
-      desc: "We book your founders on fintech, payments, and investment shows where your buyers actually listen. Trust built through conversation, not advertising.",
+      title: "Podcasts",
+      desc: "The fintech and payments shows your buyers tune into during their commute. A voice they already trust, introducing you.",
       iconColor: "text-purple-500",
       iconBg: "bg-purple-500/8",
     },
     {
       icon: Cpu,
       title: "AI Models",
-      desc: "When a CFO asks ChatGPT about payment processors or trading tools, your brand needs to appear in that answer. We engineer content for LLM citation.",
+      desc: "When someone asks ChatGPT or Perplexity which companies to consider in your category, you need to be in that answer. We engineer for LLM citation.",
       iconColor: "text-purple-500",
       iconBg: "bg-purple-500/8",
     },
     {
       icon: Link2,
       title: "Authority Backlinks",
-      desc: "Links from publications that financial regulators, buyers, and Google all recognize as credible. Quality placements that move domain authority.",
+      desc: "Links from credible, relevant sources in your vertical. The kind that signal to Google and to your prospects that you belong in this conversation.",
       iconColor: "text-green-800",
       iconBg: "bg-green-900/8",
     },
@@ -50,13 +50,13 @@ export function ChannelsSection() {
     <section className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
-          ● Where We Build Authority
+          ● Where We Build Your Presence
         </span>
         <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
-          The channels that matter<br className="hidden sm:block" /> in financial services.
+          Every place your buyer<br className="hidden sm:block" />looks before saying yes.
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[600px] leading-relaxed mb-14">
-          Finance audiences don&apos;t behave like typical B2B buyers. We go where they read, listen, and make decisions.
+          Finance buyers don&apos;t make decisions from one touchpoint. We make sure you show up across all of them.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[14px]">

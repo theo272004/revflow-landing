@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export function PricingSection() {
   const upgrades = [
-    { title: "Data Studies and Reports", desc: "Original research that earns backlinks and positions you as a primary source in your vertical." },
-    { title: "YouTube and Video Content", desc: "Scripted video production aligned with your written content clusters." },
-    { title: "Interactive Tools and Calculators", desc: "Engineering-as-marketing assets that capture leads and earn organic links." },
+    { title: "Data Studies and Original Research", desc: "The kind of content other publications cite and link to. Builds authority fast." },
+    { title: "YouTube and Video Production", desc: "Scripted video built for search, aligned with your written content clusters." },
+    { title: "Interactive Calculators and Tools", desc: "Lead capture assets that also earn organic backlinks from other sites." },
   ]
 
   return (
@@ -13,11 +13,14 @@ export function PricingSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
-            ● Flexible Partnership
+            ● Simple, Flexible Pricing
           </span>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight">
-            Measurable results.<br className="hidden sm:block" /> No lock-in contracts.
+            Start with a blueprint.<br className="hidden sm:block" /> Scale when it works.
           </h2>
+          <p className="text-[17px] text-muted-foreground max-w-[600px] leading-relaxed mx-auto mt-4 mb-14">
+            No long-term lock-in. No vague deliverables. You know exactly what you&apos;re getting before you sign anything.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-[22px]">
@@ -30,10 +33,10 @@ export function PricingSection() {
             <div className="text-5xl font-extrabold text-green-900 leading-none mb-1">$950</div>
             <div className="text-xs tracking-[.1em] uppercase text-muted-foreground mb-5">One-off</div>
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-8">
-              For finance companies with a team in place but no clear authority strategy. We audit, map, and architect your full content and distribution system.
+              You have a team that can execute. You just need to know exactly where to focus, which publications to target, and what your content gaps actually are. This is that.
             </p>
             <ul className="flex flex-col gap-3 mb-9">
-              {["E-E-A-T and YMYL gap audit", "Topic cluster architecture", "6-month content and PR roadmap", "First 5 briefs and publication targets"].map((item) => (
+              {["E-E-A-T and YMYL gap audit", "Full topic cluster architecture", "6-month content and PR roadmap", "First 5 briefs with publication targets"].map((item) => (
                 <li key={item} className="text-sm text-green-950 flex items-start gap-3">
                   <CheckCircle className="w-[18px] h-[18px] mt-[1px] flex-shrink-0 text-green-800" />
                   {item}
@@ -54,13 +57,13 @@ export function PricingSection() {
               <CheckCircle className="w-6 h-6 text-green-400" />
             </div>
             <div className="text-base font-bold text-white/62 mb-2">Authority Partner</div>
-            <div className="text-[40px] font-extrabold text-white leading-none mb-1">Talk to Us</div>
-            <div className="text-xs tracking-[.1em] uppercase text-white/38 mb-5">Retainer</div>
+            <div className="text-[40px] font-extrabold text-white leading-none mb-1">$1,500</div>
+            <div className="text-xs tracking-[.1em] uppercase text-white/38 mb-5">Starting at / month</div>
             <p className="text-[15px] text-white/55 leading-relaxed mb-8">
-              Full-service. We become your editorial and distribution department, handling everything from content production to publication placement.
+              We run your entire authority operation. Content, backlinks, publications, podcasts, LinkedIn. End to end. Scope and pricing scale with your vertical and goals. Book a call to get a custom proposal.
             </p>
             <ul className="flex flex-col gap-3 mb-9">
-              {["Everything in Authority Blueprint", "Expert-sourced content production", "Industry publication placements", "LinkedIn content strategy", "Podcast booking and prep", "Authority backlink building", "Monthly performance reviews"].map((item) => (
+              {["Everything in Authority Blueprint", "Expert-sourced content production", "Industry publication placements", "LinkedIn content strategy", "Podcast booking and interview prep", "Authority backlink building", "Monthly performance reviews"].map((item) => (
                 <li key={item} className="text-sm text-white/80 flex items-start gap-3">
                   <CheckCircle className="w-[18px] h-[18px] mt-[1px] flex-shrink-0 text-green-400" />
                   {item}
@@ -76,7 +79,7 @@ export function PricingSection() {
         {/* Upgrades */}
         <div className="mt-14">
           <div className="text-[11px] tracking-[.14em] uppercase text-green-500 text-center mb-6">
-            Available Upgrades
+            Available Add-ons
           </div>
           <div className="grid md:grid-cols-3 gap-[14px]">
             {upgrades.map(({ title, desc }) => (

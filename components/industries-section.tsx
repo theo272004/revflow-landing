@@ -7,55 +7,55 @@ export function IndustriesSection() {
       icon: CreditCard,
       title: "Fintech",
       href: "/industries/fintech",
-      desc: "From payments to lending, we help fintech companies build the authority Google requires in this space.",
+      desc: "Payments, lending, neobanks, and financial infrastructure companies competing for the attention of enterprise buyers.",
     },
     {
       icon: Dices,
       title: "iGaming & Online Gambling",
       href: "/industries/igaming",
-      desc: "High-regulation, high-competition. Content strategy for operators, platforms, and B2B suppliers.",
+      desc: "B2B operators, platforms, and suppliers in one of the most regulated and competitive digital verticals.",
     },
     {
       icon: TrendingUp,
       title: "Trading & Brokers",
       href: "/industries/trading-brokers",
-      desc: "SEO for forex, CFD, and multi-asset brokers operating in regulated environments.",
+      desc: "Forex, CFD, and multi-asset brokers trying to rank in a category dominated by Tier 1 incumbents.",
     },
     {
       icon: Shield,
       title: "Payment Gateways",
       href: "/industries/payment-gateways",
-      desc: "Content that builds trust for processors and acquirers selling into regulated merchant markets.",
+      desc: "Processors and acquirers building trust with merchants who need to know you're a credible partner before they integrate.",
     },
     {
       icon: Gem,
       title: "Crypto & Web3",
       href: "/industries/crypto-web3",
-      desc: "Authority content for exchanges, protocols, and Web3 infrastructure navigating a fast-moving regulatory landscape.",
+      desc: "Exchanges, protocols, and infrastructure companies navigating a fast-moving regulatory landscape while trying to build credibility.",
     },
     {
       icon: DollarSign,
       title: "Investment & Wealth",
       href: "/industries/investment-wealth",
-      desc: "Editorial content for asset managers, robo-advisors, and wealth platforms that need to earn trust before they earn clients.",
+      desc: "Asset managers, robo-advisors, and wealth platforms that need to earn trust before they earn clients.",
     },
     {
       icon: Monitor,
       title: "Neobanks & Digital Banking",
       href: "/industries/neobanks-digital-banking",
-      desc: "Content strategy for challenger banks competing against incumbents with decades of domain authority.",
+      desc: "Challenger banks building organic visibility against incumbents with decades of domain authority.",
     },
     {
       icon: Home,
       title: "InsurTech",
       href: "/industries/insurtech",
-      desc: "SEO and thought leadership for insurance technology companies in a category dominated by legacy brands.",
+      desc: "Insurance technology companies competing in a category where legacy brands have owned the conversation for decades.",
     },
     {
       icon: Users,
       title: "Finance Consultants",
       href: "/industries/finance-consultants",
-      desc: "Content and authority-building for independent advisors and boutique consultancies competing for high-value clients.",
+      desc: "Independent advisors and boutique firms competing for high-value clients who vet extensively before they engage.",
     },
   ]
 
@@ -66,10 +66,10 @@ export function IndustriesSection() {
           ● Industries We Serve
         </span>
         <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
-          Built for every corner<br className="hidden sm:block" /> of financial services.
+          We go deep into<br className="hidden sm:block" />the verticals we work with.
         </h2>
         <p className="text-[17px] text-muted-foreground max-w-[600px] leading-relaxed mb-14">
-          Each vertical has its own compliance landscapes, buyer psychology, and distribution channels. We go deep into the ones we work with.
+          Every financial vertical has a different compliance landscape, a different buyer, and a different set of publications that matter. We don&apos;t generalize.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
