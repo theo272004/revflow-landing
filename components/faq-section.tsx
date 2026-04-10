@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
 import { Plus } from "lucide-react"
 
 export function FAQSection() {
@@ -86,15 +85,6 @@ export function FAQSection() {
           ))}
         </div>
 
-        <div className="text-center mt-14 pb-2">
-          <p className="text-[13px] text-muted-foreground mb-3">Have a question before reaching out?</p>
-          <Link
-            href="#contact"
-            className="text-lg font-semibold text-green-900 no-underline hover:underline"
-          >
-            contact@revflow.co
-          </Link>
-        </div>
       </div>
     </section>
   )
