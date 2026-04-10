@@ -1,6 +1,6 @@
 const publications = [
   { name: "Finextra",          src: "/revflow-landing/finextra-logo.png",         w: 110 },
-  { name: "The Block",         src: "/revflow-landing/theblock_icon.png",          w: 100 },
+  { name: "The Block",         src: "/revflow-landing/theblock_icon.png",          w: 160 },
   { name: "Forbes",            src: "/revflow-landing/Forbes-Logo.png",            w: 100 },
   { name: "Crowdfund Insider", src: "/revflow-landing/growdfundinsider_logo.png",  w: 140 },
   { name: "Payments Source",   src: "/revflow-landing/paymentsourcelogo.png",      w: 120 },
