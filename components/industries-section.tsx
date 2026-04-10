@@ -42,14 +42,14 @@ export function IndustriesSection() {
       icon: DollarSign,
       title: "Investment & Wealth",
       href: "/industries/investment-wealth",
-      image: null,
+      image: "/revflow-landing/investment.png",
       desc: "Asset managers, robo-advisors, and wealth platforms that need to earn trust before they earn clients.",
     },
     {
       icon: Monitor,
       title: "Neobanks & Digital Banking",
       href: "/industries/neobanks-digital-banking",
-      image: null,
+      image: "/revflow-landing/neobank.png",
       desc: "Challenger banks building organic visibility against incumbents with decades of domain authority.",
     },
     {
@@ -63,7 +63,7 @@ export function IndustriesSection() {
       icon: Users,
       title: "Finance Consultants",
       href: "/industries/finance-consultants",
-      image: null,
+      image: "/revflow-landing/finance-consultant.png",
       desc: "Independent advisors and boutique firms competing for high-value clients who vet extensively before they engage.",
     },
   ]
