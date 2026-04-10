@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ChevronDown, Menu, X } from "lucide-react"
 
 const industries = [
@@ -63,6 +64,7 @@ function DesktopDropdown({
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [openSection, setOpenSection] = useState<string | null>(null)
+  const pathname = usePathname()
 
   const toggleSection = (section: string) => {
     setOpenSection(openSection === section ? null : section)
@@ -73,7 +75,16 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[68px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 no-underline">
+          <Link
+            href="/"
+            className="flex items-center gap-2.5 no-underline"
+            onClick={(e) => {
+              if (pathname === "/") {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: "smooth" })
+              }
+            }}
+          >
             <Image src="/revflow-landing/favicon.png" alt="SEO4Finance" width={40} height={40} className="rounded-lg" />
             <span className="font-bold text-base tracking-[.06em] text-green-800">
               REV<span className="text-green-600">FLOW</span>
