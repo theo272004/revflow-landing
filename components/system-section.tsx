@@ -20,9 +20,9 @@ export function SystemSection() {
     {
       icon: Search,
       num: "03",
-      title: "Search Visibility",
-      desc: "Compliance-aware content built to rank for the exact terms your buyers search before they make a decision. Not keyword stuffing. Genuine E-E-A-T content that Google trusts in YMYL categories. Which is exactly where you operate.",
-      pills: ["YMYL compliant", "E-E-A-T by design", "High-intent terms"],
+      title: "Search & AI Visibility",
+      desc: "When someone asks ChatGPT or Perplexity which companies to consider in your category, you need to be in that answer. We engineer for LLM citation while also building compliance-aware content that ranks for the exact terms your buyers search before they make a decision. Genuine E-E-A-T content that Google trusts in YMYL categories — which is exactly where you operate.",
+      pills: ["YMYL compliant", "E-E-A-T by design", "LLM citation", "High-intent terms"],
     },
     {
       icon: Users,
@@ -84,7 +84,7 @@ export function SystemSection() {
           <p className="text-[17px] text-white/70 max-w-[580px] leading-relaxed">
             <strong className="text-white">The goal is simple:</strong> by the time your sales team reaches out, your prospect already knows your name, has seen you in a publication they respect, and trusts that you know what you&apos;re talking about.
           </p>
-          <Link href="#process" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
+          <Link href="/industries/ourprocess" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
             See Our Process
           </Link>
         </div>

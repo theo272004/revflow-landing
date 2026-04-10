@@ -1,4 +1,4 @@
-import { Search, Users, Monitor, Tv, Shield, MessageSquare } from "lucide-react"
+import { Search, Users, Tv } from "lucide-react"
 
 export function ProblemSection() {
   const problems = [
@@ -13,24 +13,9 @@ export function ProblemSection() {
       desc: "They wrote generic content, got you irrelevant traffic, and had no idea what compliance meant. You ended up fixing their work or starting over.",
     },
     {
-      icon: Monitor,
-      title: "You're invisible where the decision actually happens",
-      desc: "Before a prospect takes your call, they've already Googled you, checked if you've been mentioned anywhere credible, and formed an opinion. Most companies lose the deal there.",
-    },
-    {
       icon: Tv,
       title: "You're paying for ads that stop working the moment you stop paying",
       desc: "Paid traffic is rented. The day you pause the campaign, the pipeline dries up. You need something that builds, not something that disappears.",
-    },
-    {
-      icon: MessageSquare,
-      title: "ChatGPT recommends your competitors, not you",
-      desc: "When a CFO asks an AI model which payment processors to consider, your name doesn't come up. That's a new kind of invisible, and most companies haven't solved it yet.",
-    },
-    {
-      icon: Shield,
-      title: "Finance content has rules most agencies don't know about",
-      desc: "Google treats financial content differently. One compliance mistake in your copy can cost you more than just rankings. Most agencies have never worked in a regulated market.",
     },
   ]
 

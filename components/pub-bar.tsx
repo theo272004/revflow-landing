@@ -20,13 +20,13 @@ export function PubBar() {
           {publications.map((pub) => (
             <div
               key={pub.name}
-              className="relative hover:opacity-80 transition-opacity cursor-default grayscale opacity-35"
-              style={{ width: pub.w, height: pub.h }}
+              className="hover:opacity-80 transition-opacity cursor-default grayscale opacity-35"
             >
               <Image
                 src={pub.src}
                 alt={pub.name}
-                fill
+                width={pub.w}
+                height={pub.h}
                 className="object-contain"
               />
             </div>

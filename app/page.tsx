@@ -3,9 +3,7 @@ import { Hero } from "@/components/hero"
 import { PubBar } from "@/components/pub-bar"
 import { ProblemSection } from "@/components/problem-section"
 import { SystemSection } from "@/components/system-section"
-import { ChannelsSection } from "@/components/channels-section"
 import { IndustriesSection } from "@/components/industries-section"
-import { ProcessSection } from "@/components/process-section"
 import { CaseStudiesSection } from "@/components/case-studies-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { PricingSection } from "@/components/pricing-section"
@@ -24,11 +22,7 @@ export default function Home() {
       <div className="border-t border-green-900/10" />
       <SystemSection />
       <div className="border-t border-green-900/10" />
-      <ChannelsSection />
-      <div className="border-t border-green-900/10" />
       <IndustriesSection />
-      <div className="border-t border-green-900/10" />
-      <ProcessSection />
       <div className="border-t border-green-900/10" />
       <CaseStudiesSection />
       <div className="border-t border-green-900/10" />
