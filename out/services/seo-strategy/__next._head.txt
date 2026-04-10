@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[33890,["/revflow-landing/_next/static/chunks/0a0w5efn8h1vy.js","/revflow-landing/_next/static/chunks/14z.e5-cxg8c_.js"],"ViewportBoundary"]
-3:I[33890,["/revflow-landing/_next/static/chunks/0a0w5efn8h1vy.js","/revflow-landing/_next/static/chunks/14z.e5-cxg8c_.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[66913,["/revflow-landing/_next/static/chunks/0a0w5efn8h1vy.js","/revflow-landing/_next/static/chunks/14z.e5-cxg8c_.js"],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"SEO Strategy & Content | Revflow"}],["$","meta","1",{"name":"description","content":"Full content system architecture for financial services. YMYL-compliant SEO strategy, expert-sourced briefs, and E-E-A-T optimized content."}],["$","link","2",{"rel":"icon","href":"/revflow-landing/favicon.png"}],["$","link","3",{"rel":"apple-touch-icon","href":"/revflow-landing/favicon.png"}],["$","$L5","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ylk1NTe4Yxrk94rQTfJND"}
