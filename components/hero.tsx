@@ -12,10 +12,6 @@ export function Hero() {
 
           {/* Left — Text + CTAs */}
           <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 text-[11px] tracking-[.14em] uppercase text-green-700 border border-green-900/20 rounded-full px-4 py-1.5 mb-9 bg-white/70">
-              <span className="w-[6px] h-[6px] bg-green-500 rounded-full animate-pulse"></span>
-              For Financial Services Companies
-            </div>
             <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight">
               Get Found. <span className="text-green-600">Get Trusted.</span>
             </h1>

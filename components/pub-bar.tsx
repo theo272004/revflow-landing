@@ -1,11 +1,13 @@
+import Image from "next/image"
+
 export function PubBar() {
   const publications = [
-    "Finextra",
-    "The Block",
-    "Forbes Finance",
-    "Crowdfund Insider",
-    "Payments Source",
-    "Coindesk",
+    { name: "Finextra", src: "/revflow-landing/finextra-logo.png", w: 110, h: 28 },
+    { name: "The Block", src: "/revflow-landing/theblock_icon.png", w: 90, h: 28 },
+    { name: "Forbes Finance", src: "/revflow-landing/Forbes-Logo.png", w: 100, h: 28 },
+    { name: "Crowdfund Insider", src: "/revflow-landing/growdfundinsider_logo.png", w: 130, h: 28 },
+    { name: "Payments Source", src: "/revflow-landing/paymentsourcelogo.png", w: 120, h: 28 },
+    { name: "Coindesk", src: "/revflow-landing/CoinDesk_logo.svg.png", w: 100, h: 28 },
   ]
 
   return (
@@ -16,12 +18,19 @@ export function PubBar() {
         </p>
         <div className="flex items-center justify-center gap-11 flex-wrap">
           {publications.map((pub) => (
-            <span
-              key={pub}
-              className="text-base font-bold text-green-900/70 tracking-wide hover:text-green-900 transition-colors cursor-default"
+            <div
+              key={pub.name}
+              className="relative hover:opacity-80 transition-opacity cursor-default"
+              style={{ width: pub.w, height: pub.h }}
             >
-              {pub}
-            </span>
+              <Image
+                src={pub.src}
+                alt={pub.name}
+                fill
+                className="object-contain"
+                style={{ filter: "grayscale(100%) opacity(0.35)" }}
+              />
+            </div>
           ))}
         </div>
       </div>
