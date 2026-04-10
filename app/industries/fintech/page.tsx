@@ -1,11 +1,9 @@
-"use client"
-
-import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Plus, CheckCircle2, Search, Shield, Users, Monitor, CreditCard, Mic, Link2 } from "lucide-react"
+import { CheckCircle2, Search, Shield, Users, Monitor, CreditCard, Mic, Link2 } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { IndustryFAQ } from "@/components/industry-faq"
 
 export const metadata: Metadata = {
   title: "SEO Agency for Fintech Companies | SEO4Finance",
@@ -37,12 +35,6 @@ const faqs = [
 ]
 
 export default function FintechPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
-
   return (
     <main className="min-h-screen bg-[#f5f0e8]">
       <Header />
@@ -206,37 +198,7 @@ export default function FintechPage() {
               Fintech-specific questions<br className="hidden sm:block" />we get asked often.
             </h2>
           </div>
-          <div className="flex flex-col gap-1 mt-11">
-            {faqs.map(({ q, a }, i) => (
-              <div
-                key={i}
-                className={`border rounded-xl overflow-hidden transition-colors relative z-10 bg-white ${
-                  openIndex === i ? "border-green-900/18" : "border-green-900/10"
-                }`}
-              >
-                <button
-                  onClick={() => toggle(i)}
-                  className="w-full flex justify-between items-center gap-4 text-left px-7 py-5 text-[15px] font-semibold text-green-900 hover:text-green-600 transition-colors bg-transparent border-none cursor-pointer"
-                >
-                  {q}
-                  <span
-                    className={`w-[22px] h-[22px] rounded-full border border-green-900/18 flex items-center justify-center flex-shrink-0 transition-all ${
-                      openIndex === i ? "rotate-45 bg-green-100 border-green-500" : ""
-                    }`}
-                  >
-                    <Plus className="w-3 h-3 text-green-600" />
-                  </span>
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    openIndex === i ? "max-h-[400px] px-7 pb-5" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-[15px] text-muted-foreground leading-relaxed">{a}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <IndustryFAQ faqs={faqs} />
           <div className="text-center mt-12">
             <p className="text-[13px] text-muted-foreground mb-3">Questions about your specific situation?</p>
             <a href="mailto:contact@seoforstartups.co" className="text-lg font-semibold text-green-900 no-underline hover:text-green-600 transition-colors">
