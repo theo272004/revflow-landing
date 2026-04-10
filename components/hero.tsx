@@ -12,8 +12,14 @@ export function Hero() {
 
           {/* Left — Text + CTAs */}
           <div className="max-w-xl">
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight">
+              Get Found.
+            </h1>
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-green-600 leading-tight tracking-tight">
+              Get Trusted.
+            </h1>
             <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight mb-4">
-              Get Found. <span className="text-green-600">Get Clients.</span>
+              Get Clients.
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8">

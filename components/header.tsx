@@ -76,7 +76,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2.5 no-underline">
             <Image src="/revflow-landing/favicon.png" alt="SEO4Finance" width={40} height={40} className="rounded-lg" />
             <span className="font-bold text-base tracking-[.06em] text-green-800">
-              SEO4<span className="text-green-600">FINANCE</span>
+              REV<span className="text-green-600">FLOW</span>
             </span>
           </Link>
 
