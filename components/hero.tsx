@@ -40,7 +40,7 @@ export function Hero() {
           <div className="relative flex items-center justify-center">
             <div className="relative w-full max-w-xl">
               <Image
-                src="/hero-image.png"
+                src="/revflow-landing/hero-image.png"
                 alt="Revflow — Authority content for financial services"
                 width={730}
                 height={550}

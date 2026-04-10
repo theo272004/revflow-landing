@@ -69,7 +69,7 @@ export function Header() {
         <div className="flex items-center justify-between h-[68px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 no-underline">
-            <Image src="/favicon.png" alt="Revflow" width={32} height={32} className="rounded-lg" />
+            <Image src="/revflow-landing/favicon.png" alt="Revflow" width={32} height={32} className="rounded-lg" />
             <span className="font-bold text-sm tracking-[.06em] text-green-800">
               REV<span className="text-green-600">FLOW</span>
             </span>
