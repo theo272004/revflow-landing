@@ -34,7 +34,7 @@ export function SystemSection() {
   ]
 
   return (
-    <section className="py-28 bg-green-900 relative overflow-hidden">
+    <section id="system" className="py-28 bg-green-900 relative overflow-hidden" aria-labelledby="system-heading">
       {/* Glow */}
       <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(82,183,136,0.12),transparent_65%)] pointer-events-none" />
 
@@ -42,7 +42,7 @@ export function SystemSection() {
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
           ● What We Do
         </span>
-        <h2 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
+        <h2 id="system-heading" className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
           We build the authority<br className="hidden sm:block" />your competitors already have.
         </h2>
         <p className="text-[17px] text-white/55 max-w-[600px] leading-relaxed mb-14">

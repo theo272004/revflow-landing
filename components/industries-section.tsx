@@ -7,49 +7,49 @@ export function IndustriesSection() {
       icon: CreditCard,
       title: "Fintech",
       href: "/industries/fintech",
-      image: "/revflow-landing/fintech.jpg",
+      image: "/revflow-landing/fintech.webp",
       desc: "Payments, lending, neobanks, and financial infrastructure companies competing for the attention of enterprise buyers.",
     },
     {
       icon: Dices,
       title: "iGaming & Online Gambling",
       href: "/industries/igaming",
-      image: "/revflow-landing/igaming.jpg",
+      image: "/revflow-landing/igaming.webp",
       desc: "B2B operators, platforms, and suppliers in one of the most regulated and competitive digital verticals.",
     },
     {
       icon: TrendingUp,
       title: "Trading & Brokers",
       href: "/industries/trading-brokers",
-      image: "/revflow-landing/trading-brokers.png",
+      image: "/revflow-landing/trading-brokers.webp",
       desc: "Forex, CFD, and multi-asset brokers trying to rank in a category dominated by Tier 1 incumbents.",
     },
     {
       icon: Shield,
       title: "Payment Gateways",
       href: "/industries/payment-gateways",
-      image: "/revflow-landing/payment-gateway.png",
+      image: "/revflow-landing/payment-gateway.webp",
       desc: "Processors and acquirers building trust with merchants who need to know you're a credible partner before they integrate.",
     },
     {
       icon: Gem,
       title: "Crypto & Web3",
       href: "/industries/crypto-web3",
-      image: "/revflow-landing/crypto-web3.png",
+      image: "/revflow-landing/crypto-web3.webp",
       desc: "Exchanges, protocols, and infrastructure companies navigating a fast-moving regulatory landscape while trying to build credibility.",
     },
     {
       icon: DollarSign,
       title: "Investment & Wealth",
       href: "/industries/investment-wealth",
-      image: "/revflow-landing/investment.png",
+      image: "/revflow-landing/investment.webp",
       desc: "Asset managers, robo-advisors, and wealth platforms that need to earn trust before they earn clients.",
     },
     {
       icon: Monitor,
       title: "Neobanks & Digital Banking",
       href: "/industries/neobanks-digital-banking",
-      image: "/revflow-landing/neobank.png",
+      image: "/revflow-landing/neobank.webp",
       desc: "Challenger banks building organic visibility against incumbents with decades of domain authority.",
     },
     {
@@ -63,7 +63,7 @@ export function IndustriesSection() {
       icon: Users,
       title: "Finance Consultants",
       href: "/industries/finance-consultants",
-      image: "/revflow-landing/finance-consultant.png",
+      image: "/revflow-landing/finance-consultant.webp",
       desc: "Independent advisors and boutique firms competing for high-value clients who vet extensively before they engage.",
     },
   ]
@@ -81,7 +81,7 @@ export function IndustriesSection() {
           Every financial vertical has a different compliance landscape, a different buyer, and a different set of publications that matter. We don&apos;t generalize.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="industries">
           {industries.map(({ icon: Icon, title, href, image, desc }) => (
             <Link
               key={title}
@@ -94,6 +94,8 @@ export function IndustriesSection() {
                   <img
                     src={image}
                     alt=""
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />

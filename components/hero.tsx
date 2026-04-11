@@ -36,12 +36,13 @@ export function Hero() {
           <div className="relative flex items-center justify-center">
             <div className="relative w-full max-w-xl">
               <Image
-                src="/revflow-landing/hero-image.png"
-                alt="SEO4Finance — Get Found. Get Trusted. Get Clients."
+                src="/revflow-landing/hero-image.webp"
+                alt="Revflow — SEO and content marketing for financial services companies"
                 width={730}
                 height={550}
                 className="w-full h-auto object-contain drop-shadow-xl"
                 priority
+                fetchPriority="high"
               />
             </div>
           </div>
