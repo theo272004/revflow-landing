@@ -108,12 +108,6 @@ export function FAQSection() {
           ))}
         </div>
 
-        <div className="text-center mt-14 pb-2">
-          <p className="text-[13px] text-muted-foreground mb-3">Have a question before reaching out?</p>
-          <a href="mailto:contact@seoforstartups.co" className="text-lg font-semibold text-green-900 no-underline hover:text-green-600 transition-colors">
-            contact@seoforstartups.co
-          </a>
-        </div>
       </div>
     </section>
   )

@@ -199,12 +199,6 @@ export default function TradingBrokersPage() {
             </h2>
           </div>
           <IndustryFAQ faqs={faqs} />
-          <div className="text-center mt-12">
-            <p className="text-[13px] text-muted-foreground mb-3">Questions about your specific situation?</p>
-            <a href="mailto:contact@seoforstartups.co" className="text-lg font-semibold text-green-900 no-underline hover:text-green-600 transition-colors">
-              contact@seoforstartups.co
-            </a>
-          </div>
         </div>
       </section>
 
