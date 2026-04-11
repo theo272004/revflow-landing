@@ -122,13 +122,6 @@ export function Header() {
             >
               Pricing
             </Link>
-            <Link
-              href="/#contact"
-              onClick={(e) => handleHashClick(e, "contact")}
-              className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2"
-            >
-              Contact
-            </Link>
           </nav>
 
           {/* CTA Button */}
@@ -215,13 +208,6 @@ export function Header() {
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
               >
                 Pricing
-              </Link>
-              <Link
-                href="/#contact"
-                onClick={(e) => handleHashClick(e, "contact", true)}
-                className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
-              >
-                Contact
               </Link>
               <div className="px-2 py-3 border-t border-green-900/10">
                 <Link
