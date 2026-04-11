@@ -7,15 +7,15 @@ import { usePathname } from "next/navigation"
 import { ChevronDown, Menu, X } from "lucide-react"
 
 const industries = [
-  { name: "Fintech", description: "Content and SEO for fintech companies", href: "/industries/fintech" },
-  { name: "iGaming & Online Gambling", description: "Authority content for regulated gaming", href: "/industries/igaming" },
-  { name: "Trading & Brokers", description: "SEO for forex and trading platforms", href: "/industries/trading-brokers" },
-  { name: "Payment Gateways", description: "Content for payment processors", href: "/industries/payment-gateways" },
-  { name: "Crypto & Web3", description: "Web3 content marketing agency", href: "/industries/crypto-web3" },
-  { name: "Investment & Wealth", description: "SEO for investment firms", href: "/industries/investment-wealth" },
-  { name: "Neobanks & Digital Banking", description: "Content for digital-first banks", href: "/industries/neobanks" },
-  { name: "InsurTech", description: "Insurance content marketing", href: "/industries/insurtech" },
-  { name: "Finance Consultants", description: "SEO for financial advisors", href: "/industries/finance-consultants" },
+  { name: "Fintech", href: "/industries/fintech" },
+  { name: "iGaming & Online Gambling", href: "/industries/igaming" },
+  { name: "Trading & Brokers", href: "/industries/trading-brokers" },
+  { name: "Payment Gateways", href: "/industries/payment-gateways" },
+  { name: "Crypto & Web3", href: "/industries/crypto-web3" },
+  { name: "Investment & Wealth", href: "/industries/investment-wealth" },
+  { name: "Neobanks & Digital Banking", href: "/industries/neobanks" },
+  { name: "InsurTech", href: "/industries/insurtech" },
+  { name: "Finance Consultants", href: "/industries/finance-consultants" },
 ]
 
 const services = [
@@ -26,7 +26,6 @@ const services = [
   { name: "Podcast Booking", description: "Fintech and finance shows", href: "/services/podcast-booking" },
   { name: "LinkedIn Content", description: "Strategy for finance audiences", href: "/services/linkedin-content" },
   { name: "YouTube & Video", description: "Scripted video for search", href: "/services/video-content" },
-  { name: "E-E-A-T Optimization", description: "YMYL compliance and trust signals", href: "/services/eeat-optimization" },
 ]
 
 function DesktopDropdown({
@@ -34,7 +33,7 @@ function DesktopDropdown({
   items,
 }: {
   label: string
-  items: Array<{ name: string; description: string; href: string }>
+  items: Array<{ name: string; description?: string; href: string }>
 }) {
   return (
     <div className="group relative">
@@ -52,7 +51,9 @@ function DesktopDropdown({
               className="rounded-xl px-4 py-2.5 transition-colors hover:bg-[#f5f0e8]"
             >
               <span className="block text-sm font-semibold text-green-900">{item.name}</span>
-              <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">{item.description}</span>
+              {item.description && (
+                <span className="mt-0.5 block text-xs leading-relaxed text-muted-foreground">{item.description}</span>
+              )}
             </Link>
           ))}
         </div>
@@ -98,17 +99,17 @@ export function Header() {
             <Link href="/industries/ourprocess" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
               Our Process
             </Link>
-            <Link href="#pricing" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+            <Link href="/#pricing" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
               Pricing
             </Link>
-            <Link href="#contact" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+            <Link href="/#contact" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
               Contact
             </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="#contact" className="bg-green-800 text-white text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity no-underline">
+            <Link href="/#contact" className="bg-green-800 text-white text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity no-underline">
               Book a Call
             </Link>
           </div>
@@ -181,14 +182,14 @@ export function Header() {
                 Our Process
               </Link>
               <Link
-                href="#pricing"
+                href="/#pricing"
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -196,7 +197,7 @@ export function Header() {
               </Link>
               <div className="px-2 py-3 border-t border-green-900/10">
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="bg-green-800 text-white text-center text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity block no-underline"
                   onClick={() => setIsMenuOpen(false)}
                 >
