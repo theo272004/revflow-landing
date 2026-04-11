@@ -99,10 +99,10 @@ export default function PaymentGatewaysPage() {
             {painPoints.map(({ icon: Icon, title, desc }) => (
               <div
                 key={title}
-                className="bg-[#f5f0e8] border border-green-900/10 rounded-2xl p-7 transition-colors hover:border-red-900/20"
+                className="bg-[#f5f0e8] border border-green-900/10 rounded-2xl p-7 transition-colors hover:border-green-900/20"
               >
-                <div className="w-10 h-10 rounded-xl bg-red-900/7 flex items-center justify-center mb-4">
-                  <Icon className="w-5 h-5 text-red-800" />
+                <div className="w-10 h-10 rounded-xl bg-green-900/7 flex items-center justify-center mb-4">
+                  <Icon className="w-5 h-5 text-green-800" />
                 </div>
                 <h4 className="text-sm font-bold text-green-900 mb-2">{title}</h4>
                 <p className="text-[13px] text-muted-foreground leading-relaxed">{desc}</p>

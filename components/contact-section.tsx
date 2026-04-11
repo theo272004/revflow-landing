@@ -148,7 +148,7 @@ export function ContactSection() {
                 </div>
 
                 {status === "error" && (
-                  <div className="flex items-center gap-2 text-red-600 text-sm font-medium bg-red-50 p-4 rounded-xl border border-red-100">
+                  <div className="flex items-center gap-2 text-green-800 text-sm font-medium bg-green-50 p-4 rounded-xl border border-green-200">
                     <AlertCircle className="w-4 h-4" />
                     Something went wrong. Please try again.
                   </div>
