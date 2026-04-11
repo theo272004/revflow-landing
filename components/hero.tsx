@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="relative pt-28 pb-10 overflow-hidden min-h-[90vh] flex flex-col justify-center">
+    <section className="relative pt-28 pb-10 overflow-hidden min-h-[72vh] flex flex-col justify-center">
       <AnimatedBackground />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
