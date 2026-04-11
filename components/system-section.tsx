@@ -82,7 +82,7 @@ export function SystemSection() {
         {/* CTA */}
         <div className="mt-11 p-9 rounded-2xl bg-white/5 border border-white/10 flex flex-col md:flex-row items-center gap-8">
           <p className="text-[17px] text-white/70 max-w-[580px] leading-relaxed">
-            <strong className="text-white">The goal is simple:</strong> by the time your sales team reaches out, your prospect already knows your name, has seen you in a publication they respect, and trusts that you know what you&apos;re talking about.
+            <strong className="text-white">The goal is simple: </strong>by the time your sales team reaches out, your prospect already knows your name, has seen you in a publication they respect, and trusts that you know what you&apos;re talking about.
           </p>
           <Link href="/industries/ourprocess" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
             See Our Process
