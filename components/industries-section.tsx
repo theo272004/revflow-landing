@@ -103,7 +103,7 @@ export function IndustriesSection() {
                 <div className="w-9 h-9 rounded-xl bg-green-900/7 flex items-center justify-center">
                   <Icon className="w-[18px] h-[18px] text-green-800" />
                 </div>
-                <h4 className="text-sm font-bold text-green-900">{title}</h4>
+                <h3 className="text-sm font-bold text-green-900">{title}</h3>
                 <p className="text-[13px] text-muted-foreground leading-relaxed">{desc}</p>
                 <span className="text-sm text-green-500 mt-auto pt-2">→</span>
               </div>

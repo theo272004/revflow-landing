@@ -12,14 +12,10 @@ export function Hero() {
 
           {/* Left — Text + CTAs */}
           <div className="max-w-xl">
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight">
-              Get Found.
-            </h1>
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-green-600 leading-tight tracking-tight">
-              Get Trusted.
-            </h1>
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-green-900 leading-tight tracking-tight mb-4">
-              Get Clients.
+            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+              <span className="block text-green-900">Get Found.</span>
+              <span className="block text-green-600">Get Trusted.</span>
+              <span className="block text-green-900">Get Clients.</span>
             </h1>
 
             <p className="text-base text-muted-foreground leading-relaxed mb-8">

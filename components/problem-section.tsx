@@ -44,7 +44,7 @@ export function ProblemSection() {
                 <Icon className="w-5 h-5 text-red-800" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-green-900 mb-1">{title}</h4>
+                <h3 className="text-sm font-bold text-green-900 mb-1">{title}</h3>
                 <p className="text-[13px] text-muted-foreground leading-relaxed">{desc}</p>
               </div>
             </div>

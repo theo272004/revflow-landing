@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
 
-const baseUrl = 'https://revflow.co'
+const baseUrl = 'https://theo272004.github.io/revflow-landing'
 
 const services = [
   'seo-strategy',
@@ -25,29 +25,32 @@ const industries = [
   'neobanks',
   'insurtech',
   'finance-consultants',
+  'ourprocess',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages = services.map((s) => ({
     url: `${baseUrl}/services/${s}`,
     lastModified: new Date(),
-    changePriority: 0.8 as const,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
   }))
 
   const industryPages = industries.map((i) => ({
     url: `${baseUrl}/industries/${i}`,
     lastModified: new Date(),
-    changePriority: 0.8 as const,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }))
 
   return [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly' as const,
       priority: 1,
     },
-    ...servicePages,
     ...industryPages,
+    ...servicePages,
   ]
 }
