@@ -48,7 +48,7 @@ export function IndustriesSection() {
     {
       icon: Monitor,
       title: "Neobanks & Digital Banking",
-      href: "/industries/neobanks-digital-banking",
+      href: "/industries/neobanks",
       image: "/revflow-landing/neobank.webp",
       desc: "Challenger banks building organic visibility against incumbents with decades of domain authority.",
     },

@@ -71,6 +71,19 @@ export function Header() {
     setOpenSection(openSection === section ? null : section)
   }
 
+  // Smooth scroll when already on home page, otherwise navigate normally
+  const handleHashClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    sectionId: string,
+    closeMobile?: boolean,
+  ) => {
+    if (pathname === "/") {
+      e.preventDefault()
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
+    }
+    if (closeMobile) setIsMenuOpen(false)
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#f5f0e8]/93 backdrop-blur-md border-b border-green-900/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,20 +109,35 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-0">
             <DesktopDropdown label="Industries" items={industries} />
             <DesktopDropdown label="Services" items={services} />
-            <Link href="/industries/ourprocess" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+            <Link
+              href="/industries/ourprocess"
+              className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2"
+            >
               Our Process
             </Link>
-            <Link href="/#pricing" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+            <Link
+              href="/#pricing"
+              onClick={(e) => handleHashClick(e, "pricing")}
+              className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2"
+            >
               Pricing
             </Link>
-            <Link href="/#contact" className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2">
+            <Link
+              href="/#contact"
+              onClick={(e) => handleHashClick(e, "contact")}
+              className="text-[11px] tracking-[.12em] uppercase text-muted-foreground transition-colors hover:text-green-800 px-4 py-2"
+            >
               Contact
             </Link>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="/#contact" className="bg-green-800 text-white text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity no-underline">
+            <Link
+              href="/#contact"
+              onClick={(e) => handleHashClick(e, "contact")}
+              className="bg-green-800 text-white text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity no-underline"
+            >
               Book a Call
             </Link>
           </div>
@@ -183,23 +211,23 @@ export function Header() {
               </Link>
               <Link
                 href="/#pricing"
+                onClick={(e) => handleHashClick(e, "pricing", true)}
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </Link>
               <Link
                 href="/#contact"
+                onClick={(e) => handleHashClick(e, "contact", true)}
                 className="px-2 py-3 text-sm font-semibold text-green-900 border-t border-green-900/10 no-underline"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
               <div className="px-2 py-3 border-t border-green-900/10">
                 <Link
                   href="/#contact"
+                  onClick={(e) => handleHashClick(e, "contact", true)}
                   className="bg-green-800 text-white text-center text-[11px] font-bold tracking-[.1em] uppercase px-6 py-3 rounded-full hover:opacity-85 transition-opacity block no-underline"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   Book a Call
                 </Link>
