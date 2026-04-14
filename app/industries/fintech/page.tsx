@@ -35,7 +35,7 @@ const solutions = [
 
 const scenario = [
   { num: "01", title: "Authority gap audit against your top three competitors", desc: "We map which publications have cited them, which podcasts have featured them, which searches they rank for that you do not. This tells us exactly where the gaps are and where the fastest returns will come from." },
-  { num: "02", title: "Identify the long-tail terms your buyers search during evaluation", desc: "Not "best fintech platform." The specific searches a CTO makes when evaluating your category: compliance questions, integration depth comparisons, regional capability terms. These are addressable even with low domain authority." },
+  { num: "02", title: "Identify the long-tail terms your buyers search during evaluation", desc: "Not \u2018best fintech platform.\u2019 The specific searches a CTO makes when evaluating your category: compliance questions, integration depth comparisons, regional capability terms. These are addressable even with low domain authority." },
   { num: "03", title: "Build the first publication angle and pitch Finextra within 30 days", desc: "We identify the editorial angle most relevant to your current market position, draft a contributor piece under your founder or an expert on your team, and pitch it to Finextra with the editorial context they need to accept it." },
   { num: "04", title: "Book your first podcast appearance within 60 days", desc: "We identify two or three shows with audiences that match your target buyer profile, build a pitch around a topic your founder can speak to with genuine authority, and handle all outreach and scheduling." },
 ]
