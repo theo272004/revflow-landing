@@ -58,7 +58,7 @@ export default function FintechPage() {
       <section className="pt-44 pb-24 relative overflow-hidden min-h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <img src="/revflow-landing/fintech.webp" alt="Fintech SEO Agency" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-green-950/70" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex flex-col items-center text-center max-w-[780px] mx-auto">
