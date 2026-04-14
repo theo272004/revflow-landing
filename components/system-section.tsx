@@ -42,9 +42,7 @@ export function SystemSection() {
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
           ● What We Build
         </span>
-        <h2 id="system-heading" className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
-          The authority your competitors<br className="hidden sm:block" />spent years accumulating.
-        </h2>
+
         <p className="text-[17px] text-white/55 max-w-[600px] leading-relaxed mb-14">
           Not traffic reports. Not keyword rankings. The actual signals that tell Google, your industry, and your future clients that you are a credible player in regulated financial services.
         </p>

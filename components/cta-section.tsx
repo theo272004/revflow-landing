@@ -6,11 +6,10 @@ export function CTASection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(82,183,136,0.15),transparent_65%)] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-[40px] sm:text-5xl lg:text-7xl font-extrabold leading-tight mb-5 text-white">
-          The moment is now.<br />
-          <span className="text-green-400 not-italic">Are you visible?</span>
+          Ready to build the authority your competitors have spent years accumulating?
         </h2>
         <p className="text-[17px] text-white/55 max-w-[500px] mx-auto leading-relaxed mb-11">
-          Your competitors are building authority every day. Every month you wait is a month of ground you&apos;ll have to make up later. Let&apos;s start closing the gap.
+           Your competitors may have been in the game for longer, we can help you close the gap with a scalable content system build for organic growth
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link href="#contact" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity no-underline">
@@ -23,5 +22,8 @@ export function CTASection() {
       </div>
     </section>
   )
+}
+
+
 }
 
