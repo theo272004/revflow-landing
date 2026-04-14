@@ -55,32 +55,30 @@ export default function TradingBrokersPage() {
       <Header />
 
       {/* HERO */}
-      <section className="pt-44 pb-24 relative overflow-hidden">
-        <div className="absolute -top-[10%] right-[-5%] w-[700px] h-[700px] bg-[radial-gradient(ellipse,rgba(64,145,108,0.09),transparent_65%)] pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-[72px] items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 text-[11px] tracking-[.14em] uppercase text-green-700 border border-green-900/20 rounded-full px-4 py-1.5 mb-6 bg-white/70">
-                <span className="w-[6px] h-[6px] bg-green-500 rounded-full animate-pulse" />
-                SEO for Forex Brokers
-              </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-[66px] font-extrabold text-green-900 leading-[1.07] mb-5">
-                You cannot outspend IG Group.<br /><em className="text-green-600 not-italic">You can outrank them on trust.</em>
-              </h1>
-              <p className="text-[17px] text-muted-foreground leading-relaxed mb-8 max-w-[500px]">
-                Tier 1 brokers own the high-volume keywords. We build organic visibility in the specific instruments, trader profiles, and platform features where they have left gaps, and the trust signals serious traders check before depositing.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/#contact" className="bg-green-800 text-white hover:bg-green-700 px-9 py-4 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg shadow-green-800/20 no-underline">
-                  Get Your Free Broker SEO Audit
-                </Link>
-                <Link href="/#process" className="border border-green-800/30 text-green-800 hover:bg-green-50 bg-transparent px-9 py-4 rounded-full text-xs font-semibold uppercase tracking-wide no-underline inline-flex items-center">
-                  See Our Process
-                </Link>
-              </div>
+      <section className="pt-44 pb-24 relative overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <img src="/revflow-landing/trading-brokers.webp" alt="SEO for Forex Brokers" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="flex flex-col items-center text-center max-w-[780px] mx-auto">
+            <div className="inline-flex items-center gap-2 text-[11px] tracking-[.14em] uppercase text-green-300 border border-green-400/30 rounded-full px-4 py-1.5 mb-6 bg-white/10">
+              <span className="w-[6px] h-[6px] bg-green-400 rounded-full animate-pulse" />
+              SEO for Forex Brokers
             </div>
-            <div className="relative rounded-2xl overflow-hidden">
-              <img src="/revflow-landing/trading-brokers.webp" alt="SEO for Forex Brokers" className="w-full object-cover rounded-2xl" />
+            <h1 className="text-4xl sm:text-5xl lg:text-[66px] font-extrabold text-white leading-[1.07] mb-5">
+              You cannot outspend IG Group.<br /><em className="text-green-400 not-italic">You can outrank them on trust.</em>
+            </h1>
+            <p className="text-[17px] text-white/70 leading-relaxed mb-8 max-w-[560px]">
+              Tier 1 brokers own the high-volume keywords. We build organic visibility in the specific instruments, trader profiles, and platform features where they have left gaps, and the trust signals serious traders check before depositing.
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link href="/#contact" className="bg-white text-green-900 hover:bg-green-50 px-9 py-4 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg no-underline">
+                Get Your Free Broker SEO Audit
+              </Link>
+              <Link href="/#process" className="border border-white/30 text-white hover:bg-white/10 bg-transparent px-9 py-4 rounded-full text-xs font-semibold uppercase tracking-wide no-underline inline-flex items-center">
+                See Our Process
+              </Link>
             </div>
           </div>
         </div>
