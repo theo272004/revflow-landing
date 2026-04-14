@@ -5,7 +5,6 @@ import { ProblemSection } from "@/components/problem-section"
 import { WhySection } from "@/components/why-section"
 import { ChannelsSection } from "@/components/channels-section"
 import { ProcessSection } from "@/components/process-section"
-import { SystemSection } from "@/components/system-section"
 import { IndustriesSection } from "@/components/industries-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { PricingSection } from "@/components/pricing-section"
@@ -110,8 +109,6 @@ export default function Home() {
       <ChannelsSection />
       <div className="border-t border-green-900/10" />
       <ProcessSection />
-      <div className="border-t border-green-900/10" />
-      <SystemSection />
       <div className="border-t border-green-900/10" />
       <IndustriesSection />
       <div className="border-t border-green-900/10" />
