@@ -36,18 +36,9 @@ export function ProcessSection() {
   ]
 
   return (
-    <section id="process" className="py-28 bg-[#0f1f16] relative overflow-hidden">
-      {/* Background mesh */}
-      <div
-        className="absolute inset-0 opacity-[.18] pointer-events-none"
-        style={{
-          backgroundImage: "radial-gradient(circle, rgba(82,183,136,.5) 1px, transparent 1px)",
-          backgroundSize: "36px 36px",
-        }}
-      />
-      {/* Glows */}
-      <div className="absolute -top-40 -left-20 w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(30,77,53,0.6),transparent_65%)] pointer-events-none" />
-      <div className="absolute -bottom-40 -right-20 w-[500px] h-[500px] bg-[radial-gradient(ellipse,rgba(82,183,136,0.12),transparent_65%)] pointer-events-none" />
+    <section id="process" className="py-28 bg-green-900 relative overflow-hidden">
+      {/* Glow */}
+      <div className="absolute -top-20 -right-20 w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(82,183,136,0.12),transparent_65%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
@@ -64,7 +55,7 @@ export function ProcessSection() {
           {steps.map(({ num, title, desc, items }) => (
             <div
               key={num}
-              className="bg-white/4 border border-white/9 rounded-2xl p-10 relative overflow-hidden transition-all hover:bg-white/8 hover:border-green-400/25"
+              className="bg-white/6 border border-white/10 rounded-2xl p-9 relative overflow-hidden transition-colors hover:bg-white/10 hover:border-white/20"
             >
               {/* Ghost number */}
               <span className="text-[160px] font-black text-white/3 absolute -bottom-5 -right-2 leading-none pointer-events-none select-none tracking-[-4px]">
