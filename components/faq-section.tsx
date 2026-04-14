@@ -6,31 +6,31 @@ import { Plus } from "lucide-react"
 const faqs = [
   {
     q: "How is this different from a regular SEO agency?",
-    a: "Most agencies treat financial services like any other vertical. They produce generic content, chase high-volume keywords, and have no idea what YMYL means. We're built specifically for regulated markets. That means compliance-aware copy, E-E-A-T by design, distribution through channels that actually reach finance buyers, and backlinks from publications your prospects already read.",
+    a: "Most agencies treat financial services like any other vertical. We do not. YMYL content requires a different level of sourcing, compliance awareness, and editorial credibility. We also build across LinkedIn, publications, podcasts, and search simultaneously, and we have real relationships with the finance publications that matter in your specific vertical.",
   },
   {
     q: "How long until I see results?",
-    a: "Publication placements can generate inbound within weeks. Podcast appearances start conversations immediately after they air. Organic search rankings typically move in months 2 to 4. The compounding effect, where each piece of authority reinforces the others, kicks in around month 5 or 6 and keeps building from there.",
+    a: "Publication placements can generate inbound within weeks of going live. Podcast appearances start conversations immediately after they air. Organic search rankings typically move in months 2 to 4. The compounding effect, where each piece of authority reinforces the others, kicks in around month 5 or 6 and keeps building from there.",
   },
   {
-    q: "Do you understand compliance in financial content?",
-    a: "Yes. We don't make performance claims, we avoid language that could be construed as financial advice, and we flag anything that touches regulated territory before it publishes. We are not lawyers but we know where the lines are, and we work within them.",
+    q: "Do you understand compliance requirements in financial content?",
+    a: "Yes. We do not make performance claims, we avoid language that could be construed as financial advice, and we flag anything that touches regulated territory before it publishes. We are not lawyers, but we understand where the lines are in FCA, ASIC, MGA, and SEC-regulated content, and we work within them.",
   },
   {
     q: "What publications can you get us into?",
-    a: "It depends on your vertical and the strength of your angle. We work with Finextra, The Block, Crowdfund Insider, Payments Source, Forbes Finance contributor network, and vertical-specific newsletters with real readership. We don't promise specific outlets upfront. We pitch the best angle and let the editorial process run.",
+    a: "It depends on your vertical and the strength of your angle. We work with Finextra, The Block, Crowdfund Insider, Payments Source, Forbes Finance contributor network, iGaming Business, Gambling Insider, and vertical-specific newsletters. We do not promise specific outlets upfront. We pitch the best angle and let the editorial process run.",
   },
   {
     q: "Do you book podcast appearances?",
-    a: "Yes. We identify the shows your buyers are listening to, handle the outreach, and prep you for the interview. Podcast appearances are one of the highest-trust formats in B2B and the recordings become permanent content assets that keep generating discovery long after they air.",
+    a: "Yes. We identify the shows your buyers are listening to, handle the outreach, and prep you for the interview. Finance podcast appearances are one of the highest-trust formats available in B2B and the recordings become permanent content assets that keep generating discovery long after they air.",
   },
   {
-    q: "What kinds of company do you work with?",
-    a: "Fintech, iGaming, trading platforms, payment gateways, investment tools, crypto companies, neobanks, insurtech, and finance consultants. If you're a B2B company in or adjacent to financial services and you need to build authority in a regulated market, we're the right fit.",
+    q: "What kinds of financial companies do you work with?",
+    a: "Fintech, iGaming, trading platforms, payment gateways, investment tools, crypto companies, neobanks, insurtech, and finance consultants. If you are a B2B company in or adjacent to financial services and your buyers are sophisticated enough to research you extensively before they respond, we are the right fit.",
   },
   {
-    q: "What's included in the Authority Partner retainer?",
-    a: "Strategy, content production, editorial review, publication placement, LinkedIn content, podcast booking, backlink building, and monthly performance reviews. You get a dedicated team that runs your authority operation end to end without the cost of building it in-house.",
+    q: "What is included in the Authority Partner retainer?",
+    a: "Strategy, content production, editorial review, publication placement, LinkedIn content, podcast booking, backlink building, and monthly performance reviews. You get a team that runs your authority operation end to end without the cost of building it in-house.",
   },
 ]
 

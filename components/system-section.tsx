@@ -6,29 +6,29 @@ export function SystemSection() {
     {
       icon: Link2,
       num: "01",
-      title: "Authority Backlinks",
-      desc: "Links from the publications your industry actually reads. Finextra, The Block, Payments Source, Forbes Finance. Not generic directories. Real editorial placements that move your domain authority and your reputation simultaneously.",
-      pills: ["Editorial placements", "Finance publications", "Domain authority"],
+      title: "Editorial backlinks from the publications that matter in your vertical",
+      desc: "Links from Finextra, The Block, Payments Source, and trade publications your buyers actually read. Not directories. Real editorial placements that build your domain authority and your reputation at the same time.",
+      pills: ["Finextra", "Payments Source", "The Block", "Forbes Finance"],
     },
     {
       icon: Mic,
       num: "02",
-      title: "Podcast Appearances",
-      desc: "We book your founders and executives on the fintech, payments, and investment shows your buyers actually listen to. A 30-minute interview builds more trust than 30 blog posts and the recording becomes a permanent asset.",
+      title: "Podcast appearances on the shows your buyers listen to",
+      desc: "We book your founders on fintech, payments, and investment podcasts that reach the specific decision-makers you are selling to. A single interview builds more trust than months of content and the recording becomes a permanent asset.",
       pills: ["Show research", "Outreach handled", "Interview prep"],
     },
     {
       icon: Search,
       num: "03",
-      title: "Search & AI Visibility",
-      desc: "When someone asks ChatGPT or Perplexity which companies to consider in your category, you need to be in that answer. We engineer for LLM citation while also building compliance-aware content that ranks for the exact terms your buyers search before they make a decision. Genuine E-E-A-T content that Google trusts in YMYL categories — which is exactly where you operate.",
-      pills: ["YMYL compliant", "E-E-A-T by design", "LLM citation", "High-intent terms"],
+      title: "Search and AI visibility built for YMYL-regulated categories",
+      desc: "We build topical clusters around the high-intent searches your buyers make during vendor evaluation. Compliance-reviewed, expert-attributed, and structured to rank in categories where Google applies its strictest editorial standards.",
+      pills: ["YMYL compliant", "E-E-A-T signals", "LLM citation", "High-intent terms"],
     },
     {
       icon: Users,
       num: "04",
-      title: "LinkedIn & Thought Leadership",
-      desc: "The CFO making the buying decision is on LinkedIn every day. We build consistent presence in that feed through sharp, informed content that positions your team as the people who actually understand this space.",
+      title: "LinkedIn and thought leadership that warms the pipeline before outreach",
+      desc: "The CFO making the buying decision is on LinkedIn every day. We build consistent presence in their feed so that when your sales team reaches out, they are reaching someone who already knows who you are and respects what you say.",
       pills: ["Founder positioning", "Industry commentary", "Bylined articles"],
     },
   ]
@@ -40,13 +40,13 @@ export function SystemSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
-          ● What We Do
+          ● What We Build
         </span>
         <h2 id="system-heading" className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
-          We build the authority<br className="hidden sm:block" />your competitors already have.
+          The authority your competitors<br className="hidden sm:block" />spent years accumulating.
         </h2>
         <p className="text-[17px] text-white/55 max-w-[600px] leading-relaxed mb-14">
-          Not blog posts. Not generic SEO reports. The actual signals that tell Google, your industry, and your future clients that you&apos;re a credible player in this space.
+          Not traffic reports. Not keyword rankings. The actual signals that tell Google, your industry, and your future clients that you are a credible player in regulated financial services.
         </p>
 
         <div className="grid md:grid-cols-2 gap-4">
@@ -82,10 +82,10 @@ export function SystemSection() {
         {/* CTA */}
         <div className="mt-11 p-9 rounded-2xl bg-white/5 border border-white/10 flex flex-col md:flex-row items-center gap-8">
           <p className="text-[17px] text-white/70 max-w-[580px] leading-relaxed">
-            <strong className="text-white">The goal is simple: </strong>by the time your sales team reaches out, your prospect already knows your name, has seen you in a publication they respect, and trusts that you know what you&apos;re talking about.
+            <strong className="text-white">The goal:</strong> by the time your sales team reaches out, your prospect has already seen your name in a publication they respect, heard your founder on a podcast they follow, and found you when they searched for what you offer. That is when deals close faster.
           </p>
-          <Link href="/industries/ourprocess" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
-            See Our Process
+          <Link href="#contact" className="bg-white text-green-900 text-xs font-bold uppercase tracking-widest px-10 py-[17px] rounded-full hover:opacity-90 transition-opacity flex-shrink-0 no-underline">
+            Start Building Authority
           </Link>
         </div>
       </div>

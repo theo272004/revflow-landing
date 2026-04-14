@@ -12,7 +12,7 @@ export function TestimonialsSection() {
       avClass: "bg-green-900/10 text-green-900",
       name: "Andrés M.",
       role: "CMO, B2B payments infrastructure",
-      quote: "We'd tried two other agencies before. Neither understood the compliance angle. The content reads like it was written by someone who works in financial services — because in a way, it was.",
+      quote: "We had tried two other agencies before. Neither understood the compliance angle. The work reads like it was written by someone who actually works in financial services — because in a way, it was.",
       badge: "9 high-intent rankings in 4 months",
     },
     {
@@ -21,7 +21,7 @@ export function TestimonialsSection() {
       avClass: "bg-green-900/7 text-green-800",
       name: "Laura K.",
       role: "Head of Growth, fintech lending platform",
-      quote: "Getting placed in Finextra was something we'd tried on our own for over a year. They got it done in six weeks. That single placement drove more inbound than a full quarter of content before.",
+      quote: "Getting placed in Finextra was something we had tried on our own for over a year. They got it done in six weeks. That single placement drove more inbound than a full quarter of work before.",
       badge: "Finextra placement in 6 weeks",
     },
     {
@@ -30,7 +30,7 @@ export function TestimonialsSection() {
       avClass: "bg-green-400/14 text-green-600",
       name: "Ricardo C.",
       role: "Founder, iGaming compliance platform",
-      quote: "The podcast bookings were a surprise. Two appearances in well-known fintech shows generated more qualified conversations than anything we'd done in the previous six months.",
+      quote: "The podcast bookings were a surprise. Two appearances in well-known fintech shows generated more qualified conversations than anything we had done in the previous six months combined.",
       badge: "2 podcast appearances, 6 qualified conversations",
     },
   ]

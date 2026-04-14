@@ -2,13 +2,16 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { PubBar } from "@/components/pub-bar"
 import { ProblemSection } from "@/components/problem-section"
+import { WhySection } from "@/components/why-section"
+import { ChannelsSection } from "@/components/channels-section"
+import { ProcessSection } from "@/components/process-section"
 import { SystemSection } from "@/components/system-section"
 import { IndustriesSection } from "@/components/industries-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { PricingSection } from "@/components/pricing-section"
+import { ContactSection } from "@/components/contact-section"
 import { CTASection } from "@/components/cta-section"
 import { FAQSection } from "@/components/faq-section"
-import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
 const reviewSchema = {
@@ -102,6 +105,12 @@ export default function Home() {
       <PubBar />
       <ProblemSection />
       <div className="border-t border-green-900/10" />
+      <WhySection />
+      <div className="border-t border-green-900/10" />
+      <ChannelsSection />
+      <div className="border-t border-green-900/10" />
+      <ProcessSection />
+      <div className="border-t border-green-900/10" />
       <SystemSection />
       <div className="border-t border-green-900/10" />
       <IndustriesSection />
@@ -110,9 +119,9 @@ export default function Home() {
       <div className="border-t border-green-900/10" />
       <PricingSection />
       <div className="border-t border-green-900/10" />
-      <CTASection />
-      <div className="border-t border-green-900/10" />
       <ContactSection />
+      <div className="border-t border-green-900/10" />
+      <CTASection />
       <div className="border-t border-green-900/10" />
       <FAQSection />
       <Footer />

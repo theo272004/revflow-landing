@@ -9,6 +9,7 @@ export function ContactSection() {
     name: "",
     email: "",
     company: "",
+    industry: "",
     message: "",
   })
 
@@ -20,12 +21,12 @@ export function ContactSection() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ name: formData.name, email: formData.email, company: formData.company, industry: formData.industry, message: formData.message }),
       })
 
       if (res.ok) {
         setStatus("success")
-        setFormData({ name: "", email: "", company: "", message: "" })
+        setFormData({ name: "", email: "", company: "", industry: "", message: "" })
       } else {
         setStatus("error")
       }
@@ -48,10 +49,10 @@ export function ContactSection() {
               ● Ready to Scale?
             </span>
             <h2 className="text-4xl lg:text-6xl font-extrabold text-green-900 leading-tight mb-6">
-              Book your authority audit.
+              Book your<br /><em className="not-italic text-green-600">authority audit.</em>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg">
-              Stop guessing with generic SEO. Let's build the content infrastructure that makes your financial brand impossible to ignore.
+              Tell us about your company and your goals. We will review your current authority signals across search, publications, and AI platforms and come back within 12 hours with a specific strategy outline for your vertical.
             </p>
 
             <div className="space-y-6">
@@ -60,8 +61,8 @@ export function ContactSection() {
                   <CheckCircle2 className="w-5 h-5 text-green-700" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-green-900">Direct response</h4>
-                  <p className="text-sm text-muted-foreground">We usually reply within 12 hours with a bespoke strategy outline.</p>
+                  <h4 className="font-bold text-green-900">Direct response within 12 hours</h4>
+                  <p className="text-sm text-muted-foreground">We review your company before we reply. You get a bespoke strategy outline, not a sales pitch.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -70,7 +71,16 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-green-900">Zero pressure</h4>
-                  <p className="text-sm text-muted-foreground">No high-pressure sales calls. Just engineering and data-driven insights.</p>
+                  <p className="text-sm text-muted-foreground">No high-pressure sales calls. Just engineering and data-driven insights about where your gaps are.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-green-900/5 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle2 className="w-5 h-5 text-green-700" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-green-900">Finance-specific analysis</h4>
+                  <p className="text-sm text-muted-foreground">We assess your YMYL gaps, your publication footprint, your AI citation presence, and your backlink profile in one review.</p>
                 </div>
               </div>
             </div>
@@ -135,12 +145,34 @@ export function ContactSection() {
                 </div>
 
                 <div className="space-y-2">
+                  <label htmlFor="industry" className="text-xs font-bold uppercase tracking-widest text-green-900 ml-1">Industry</label>
+                  <select
+                    id="industry"
+                    className="w-full bg-[#f5f0e8]/50 border border-green-900/10 rounded-2xl px-5 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-600/20 focus:bg-white transition-all appearance-none"
+                    value={formData.industry}
+                    onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
+                  >
+                    <option value="" disabled>Select your vertical</option>
+                    <option>Fintech</option>
+                    <option>iGaming / Online Gambling</option>
+                    <option>Trading / Forex Brokers</option>
+                    <option>Payment Gateways</option>
+                    <option>Crypto &amp; Web3</option>
+                    <option>Investment &amp; Wealth</option>
+                    <option>Neobanks / Digital Banking</option>
+                    <option>InsurTech</option>
+                    <option>Finance Consultants</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div className="space-y-2">
                   <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-green-900 ml-1">How can we help?</label>
                   <textarea
                     id="message"
                     required
                     rows={4}
-                    placeholder="Tell us about your authority goals..."
+                    placeholder="Tell us about your authority goals and where you feel most invisible right now."
                     className="w-full bg-[#f5f0e8]/50 border border-green-900/10 rounded-2xl px-5 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-600/20 focus:bg-white transition-all resize-none"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}

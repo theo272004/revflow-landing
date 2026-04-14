@@ -4,18 +4,18 @@ export function ProblemSection() {
   const problems = [
     {
       icon: Search,
-      title: "Your competitors rank for every term your clients search",
-      desc: "You know your product is better. Your clients tell you so after they sign. But before they sign, they find someone else first.",
-    },
-    {
-      icon: Users,
-      title: "You've hired agencies that didn't understand your space",
-      desc: "They wrote generic content, got you irrelevant traffic, and had no idea what compliance meant. You ended up fixing their work or starting over.",
+      title: "Your competitors rank for every term your buyers search",
+      desc: "You know your product is better. Your clients tell you so after they sign. But before they sign, they find someone else first. The deal is being lost before your sales team enters the conversation.",
     },
     {
       icon: Tv,
-      title: "You're paying for ads that stop working the moment you stop paying",
-      desc: "Paid traffic is rented. The day you pause the campaign, the pipeline dries up. You need something that builds, not something that disappears.",
+      title: "Paid traffic stops the moment your budget pauses",
+      desc: "Ad spend in fintech and financial services carries some of the highest CPCs in B2B. And when you pause, the pipeline disappears entirely. You need a channel that builds value over time, not one that resets to zero every month.",
+    },
+    {
+      icon: Users,
+      title: "You are invisible where the decision actually happens",
+      desc: "Before a prospect responds to your outreach, they have already Googled you, checked if you have been cited anywhere credible, and decided whether you belong in the conversation. Most financial companies lose the deal there.",
     },
   ]
 
@@ -27,10 +27,10 @@ export function ProblemSection() {
             ● Sound familiar?
           </span>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
-            You have a great product.<br className="hidden sm:block" />Nobody can find it.
+            You have a great product,<br className="hidden sm:block" />but nobody can find it.
           </h2>
           <p className="text-[17px] text-muted-foreground leading-relaxed">
-            You&apos;re not losing because your product is worse. You&apos;re losing because the established players in your space have spent years building the kind of online authority you haven&apos;t had time to build yet. That&apos;s fixable.
+            Established players in your space have spent years building the kind of online authority you have not had time to build yet. We fix that.
           </p>
         </div>
 
