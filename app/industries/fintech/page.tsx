@@ -79,18 +79,8 @@ export default function FintechPage() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {[
-                { val: "4.8x", label: "Average organic traffic growth for fintech clients in 6 months" },
-                { val: "6 wks", label: "Average time to first placement in a fintech publication" },
-                { val: "14", label: "Average new first-page rankings in the first quarter" },
-                { val: "100%", label: "Compliance-reviewed. No performance claims. No FCA exposure." },
-              ].map(({ val, label }) => (
-                <div key={val} className="bg-white border border-green-900/10 rounded-2xl p-[22px]">
-                  <div className="text-[32px] font-extrabold text-green-900 leading-none mb-1.5">{val}</div>
-                  <div className="text-[12px] text-muted-foreground leading-snug">{label}</div>
-                </div>
-              ))}
+            <div className="relative rounded-2xl overflow-hidden">
+              <img src="/revflow-landing/fintech.webp" alt="Fintech SEO Agency" className="w-full object-cover rounded-2xl" />
             </div>
           </div>
         </div>
@@ -108,21 +98,11 @@ export default function FintechPage() {
         </div>
       </div>
 
-      <div className="border-t border-green-900/10" />
-
-      {/* SNAPSHOT */}
+      {/* IMAGE */}
       <section className="py-[72px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">The Fintech Landscape Right Now</span>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight mb-9">Why visibility in fintech<br />has never been harder to earn.</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[14px]">
-            {snapshot.map(({ val, label, context }) => (
-              <div key={val} className="bg-[#f5f0e8] border border-green-900/10 rounded-2xl p-6">
-                <div className="text-[30px] font-extrabold text-green-900 leading-none mb-1.5">{val}</div>
-                <div className="text-[12px] font-semibold text-muted-foreground leading-snug mb-1.5">{label}</div>
-                <div className="text-[11px] text-muted-foreground opacity-70 leading-relaxed">{context}</div>
-              </div>
-            ))}
+          <div className="relative rounded-2xl overflow-hidden">
+            <img src="/fintech.webp" alt="Fintech SEO" className="w-full object-cover rounded-2xl" />
           </div>
         </div>
       </section>
@@ -147,13 +127,6 @@ export default function FintechPage() {
               <div className="flex items-start gap-3.5">
                 <div className="w-7 h-7 rounded-lg bg-green-900 text-white text-[11px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">03</div>
                 <p className="text-[14px] text-muted-foreground leading-relaxed"><strong className="text-green-950">The publications and podcasts that move fintech procurement decisions require real industry relationships.</strong> Finextra and TechCrunch do not accept cold-pitched generic content. Getting placed requires knowing their editorial standards, which angles they respond to, and building credibility over time.</p>
-              </div>
-            </div>
-            <div className="inline-flex items-center gap-3 mt-6 px-4 py-3 bg-[#d8eedf] border border-green-900/15 rounded-xl">
-              <div className="w-[34px] h-[34px] rounded-full bg-green-900 text-white flex items-center justify-center text-[11px] font-bold flex-shrink-0">SF</div>
-              <div>
-                <div className="text-[13px] font-bold text-green-900">SEO4Finance</div>
-                <div className="text-[11px] text-muted-foreground">Fintech and financial services SEO specialists. 5+ years in regulated financial markets.</div>
               </div>
             </div>
           </div>
@@ -236,19 +209,6 @@ export default function FintechPage() {
 
       <div className="border-t border-green-900/10" />
 
-      {/* FAQ */}
-      <section className="py-24 bg-[#ede8de]">
-        <div className="max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">Fintech SEO Questions</span>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight">What fintech marketing<br />teams ask us most.</h2>
-          </div>
-          <IndustryFAQ faqs={faqs} />
-        </div>
-      </section>
-
-      <div className="border-t border-green-900/10" />
-
       {/* RELATED */}
       <section className="py-[72px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -263,6 +223,17 @@ export default function FintechPage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-[#ede8de]">
+        <div className="max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">Fintech SEO Questions</span>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight">What fintech marketing<br />teams ask us most.</h2>
+          </div>
+          <IndustryFAQ faqs={faqs} />
         </div>
       </section>
 

@@ -79,18 +79,8 @@ export default function TradingBrokersPage() {
                 </Link>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              {[
-                { val: "3.2x", label: "Average organic sessions increase for broker clients" },
-                { val: "22", label: "New first-page rankings within the first four months" },
-                { val: "4", label: "Industry publication placements per engagement" },
-                { val: "0", label: "Performance claims. Everything FCA, ASIC, and CySEC compliant." },
-              ].map(({ val, label }) => (
-                <div key={val} className="bg-white border border-green-900/10 rounded-2xl p-[22px]">
-                  <div className="text-[32px] font-extrabold text-green-900 leading-none mb-1.5">{val}</div>
-                  <div className="text-[12px] text-muted-foreground leading-snug">{label}</div>
-                </div>
-              ))}
+            <div className="relative rounded-2xl overflow-hidden">
+              <img src="/revflow-landing/trading-brokers.webp" alt="SEO for Forex Brokers" className="w-full object-cover rounded-2xl" />
             </div>
           </div>
         </div>
@@ -129,6 +119,17 @@ export default function TradingBrokersPage() {
 
       <div className="border-t border-green-900/10" />
 
+      {/* IMAGE */}
+      <section className="py-[72px] bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl overflow-hidden">
+            <img src="/trading-brokers.webp" alt="Trading Brokers SEO" className="w-full object-cover rounded-2xl" />
+          </div>
+        </div>
+      </section>
+
+      <div className="border-t border-green-900/10" />
+
       {/* COMPLIANCE */}
       <section className="py-20 bg-[#ede8de]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,13 +148,6 @@ export default function TradingBrokersPage() {
               <div className="flex items-start gap-3.5">
                 <div className="w-7 h-7 rounded-lg bg-green-900 text-white text-[11px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">03</div>
                 <p className="text-[14px] text-muted-foreground leading-relaxed"><strong className="text-green-950">Trader research spans multiple touchpoints. Being absent from any of them loses deals before they start.</strong> Serious traders check your name in financial publications, look for independent reviews, ask AI models about broker options, and listen to trading podcasts before depositing. Each of those is a channel where you either have presence or you lose the deal silently.</p>
-              </div>
-            </div>
-            <div className="inline-flex items-center gap-3 mt-6 px-4 py-3 bg-[#d8eedf] border border-green-900/15 rounded-xl">
-              <div className="w-[34px] h-[34px] rounded-full bg-green-900 text-white flex items-center justify-center text-[11px] font-bold flex-shrink-0">SF</div>
-              <div>
-                <div className="text-[13px] font-bold text-green-900">SEO4Finance</div>
-                <div className="text-[11px] text-muted-foreground">Financial services SEO specialists. 5+ years in regulated markets.</div>
               </div>
             </div>
           </div>
@@ -236,19 +230,6 @@ export default function TradingBrokersPage() {
 
       <div className="border-t border-green-900/10" />
 
-      {/* FAQ */}
-      <section className="py-24 bg-[#ede8de]">
-        <div className="max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">Questions</span>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight">What we get asked most.</h2>
-          </div>
-          <IndustryFAQ faqs={faqs} />
-        </div>
-      </section>
-
-      <div className="border-t border-green-900/10" />
-
       {/* RELATED */}
       <section className="py-[72px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -263,6 +244,17 @@ export default function TradingBrokersPage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-[#ede8de]">
+        <div className="max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">Questions</span>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight">What we get asked most.</h2>
+          </div>
+          <IndustryFAQ faqs={faqs} />
         </div>
       </section>
 
