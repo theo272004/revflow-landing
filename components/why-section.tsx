@@ -25,7 +25,7 @@ export function WhySection() {
             ● Why This Space Is Different
           </span>
           <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-5">
-            Financial services is the hardest vertical to rank in. Most agencies are not built for it.
+            Financial services is one of the hardest verticals to rank in,
           </h2>
           <p className="text-[16px] text-muted-foreground leading-relaxed mb-10">
             Google applies its most stringent editorial standards to financial content. A generic SEO agency cannot navigate this space. Neither can one that has never read an FCA content rule, briefed a compliance team, or pitched Finextra.
@@ -49,3 +49,4 @@ export function WhySection() {
     </section>
   )
 }
+
