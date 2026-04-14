@@ -4,6 +4,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Mail, Mic, Search, Users } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { IndustryFAQ } from "@/components/industry-faq"
 
 const snapshot = [
@@ -57,7 +58,7 @@ export default function IGamingPage() {
       {/* HERO */}
       <section className="pt-44 pb-24 relative overflow-hidden min-h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
-          <img src="/revflow-landing/igaming.webp" alt="iGaming SEO Agency" className="w-full h-full object-cover" />
+          <Image src="/revflow-landing/igaming.webp" alt="iGaming SEO Agency" fill priority quality={100} className="object-cover object-center" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
