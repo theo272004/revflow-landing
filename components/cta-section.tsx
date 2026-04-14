@@ -23,7 +23,3 @@ export function CTASection() {
     </section>
   )
 }
-
-
-}
-
