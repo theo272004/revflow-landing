@@ -36,43 +36,59 @@ export function ProcessSection() {
   ]
 
   return (
-    <section id="process" className="py-28 bg-[#ede8de]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-5">
-            ● Our Approach
-          </span>
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-green-900 leading-tight mb-4">
-            We replaced guessing<br className="hidden sm:block" />with a system built for finance.
-          </h2>
-          <p className="text-[17px] text-muted-foreground max-w-[700px] leading-relaxed mx-auto">
-            Three steps. Each one designed specifically for how financial buyers discover, evaluate, and trust vendors in regulated markets.
-          </p>
-        </div>
+    <section id="process" className="py-28 bg-[#0f1f16] relative overflow-hidden">
+      {/* Background mesh */}
+      <div
+        className="absolute inset-0 opacity-[.18] pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(circle, rgba(82,183,136,.5) 1px, transparent 1px)",
+          backgroundSize: "36px 36px",
+        }}
+      />
+      {/* Glows */}
+      <div className="absolute -top-40 -left-20 w-[600px] h-[600px] bg-[radial-gradient(ellipse,rgba(30,77,53,0.6),transparent_65%)] pointer-events-none" />
+      <div className="absolute -bottom-40 -right-20 w-[500px] h-[500px] bg-[radial-gradient(ellipse,rgba(82,183,136,0.12),transparent_65%)] pointer-events-none" />
 
-        <div className="grid md:grid-cols-3 gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-400 font-semibold mb-5">
+          ● Our Approach
+        </span>
+        <h2 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">
+          We replaced guessing<br className="hidden sm:block" />with a system built for finance.
+        </h2>
+        <p className="text-[17px] text-white/45 max-w-[600px] leading-relaxed mb-14">
+          Three steps. Each one designed specifically for how financial buyers discover, evaluate, and trust vendors in regulated markets.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-5">
           {steps.map(({ num, title, desc, items }) => (
             <div
               key={num}
-              className="bg-white relative z-10 border border-green-900/10 rounded-2xl p-9 transition-colors hover:border-green-900/20"
+              className="bg-white/4 border border-white/9 rounded-2xl p-10 relative overflow-hidden transition-all hover:bg-white/8 hover:border-green-400/25"
             >
-              <span className="text-xs tracking-[.14em] text-green-600 font-semibold mb-5 block">
+              {/* Ghost number */}
+              <span className="text-[160px] font-black text-white/3 absolute -bottom-5 -right-2 leading-none pointer-events-none select-none tracking-[-4px]">
                 {num}
               </span>
-              <h3 className="text-xl font-extrabold text-green-900 mb-4 leading-tight">{title}</h3>
-              <p className="text-[14px] text-muted-foreground leading-relaxed mb-6">{desc}</p>
-              <ul className="flex flex-col gap-2.5">
-                {items.map((item) => (
-                  <li key={item} className="text-[13px] text-muted-foreground flex items-center gap-2.5">
-                    <span className="w-[5px] h-[5px] bg-green-500 rounded-full flex-shrink-0 opacity-70" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+
+              <div className="relative z-10">
+                <span className="text-[11px] font-bold tracking-[.18em] uppercase text-green-400 mb-5 block">
+                  {num}
+                </span>
+                <h3 className="text-[22px] font-extrabold text-white leading-tight mb-4">{title}</h3>
+                <p className="text-[14px] text-white/55 leading-relaxed mb-6">{desc}</p>
+                <ul className="flex flex-col gap-2.5">
+                  {items.map((item) => (
+                    <li key={item} className="text-[13px] text-white/50 flex items-center gap-2.5">
+                      <span className="w-[5px] h-[5px] bg-green-400 rounded-full flex-shrink-0 opacity-70" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )
