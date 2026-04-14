@@ -100,11 +100,19 @@ export default function IGamingPage() {
 
       <div className="border-t border-green-900/10" />
 
-      {/* IMAGE */}
+      {/* SNAPSHOT */}
       <section className="py-[72px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-2xl overflow-hidden">
-            <img src="/igaming.webp" alt="iGaming SEO" className="w-full object-cover rounded-2xl" />
+          <span className="inline-block text-[11px] tracking-[.14em] uppercase text-green-600 font-semibold mb-4">The iGaming Landscape Right Now</span>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-green-900 leading-tight mb-9">The market context your<br />SEO strategy has to navigate.</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[14px]">
+            {snapshot.map(({ val, label, context }) => (
+              <div key={val} className="bg-[#f5f0e8] border border-green-900/10 rounded-2xl p-6">
+                <div className="text-[30px] font-extrabold text-green-900 leading-none mb-1.5">{val}</div>
+                <div className="text-[12px] font-semibold text-muted-foreground leading-snug mb-1.5">{label}</div>
+                <div className="text-[11px] text-muted-foreground opacity-70 leading-relaxed">{context}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

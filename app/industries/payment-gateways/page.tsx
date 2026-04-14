@@ -119,17 +119,6 @@ export default function PaymentGatewaysPage() {
 
       <div className="border-t border-green-900/10" />
 
-      {/* IMAGE */}
-      <section className="py-[72px] bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-2xl overflow-hidden">
-            <img src="/payment-gateway.webp" alt="Payment Gateway SEO" className="w-full object-cover rounded-2xl" />
-          </div>
-        </div>
-      </section>
-
-      <div className="border-t border-green-900/10" />
-
       {/* COMPLIANCE */}
       <section className="py-20 bg-[#ede8de]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
